@@ -18,6 +18,9 @@ package com.github.mobile;
 import android.accounts.Account;
 import android.content.Context;
 import android.util.Log;
+/** test arnaud 26032014*/
+/** test arnaud 26032014*/
+/** test arnaud 26032014*/
 
 import com.github.mobile.accounts.AccountUtils;
 import com.github.mobile.accounts.AuthenticatedUserLoader;
