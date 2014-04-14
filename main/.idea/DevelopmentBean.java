@@ -46,10 +46,9 @@ import com.starit.janjoonweb.ui.mb.util.service.TreeOperation;
 @ManagedBean(name = "jJDevelopment")
 @ViewScoped
 public class DevelopmentBean implements Serializable {
-
-	private static final long serialVersionUID = 1L;
-	private boolean render;
-	private AbstractConfigManager configManager;
+  private static final long serialVersionUID = 1L;
+  private boolean render;
+  private AbstractConfigManager configManager;
 	private TreeOperation treeOperation;
 	private String type;
 	private int activeTabIndex;
