@@ -5,9 +5,8 @@ import java.util.Date;
 import org.springframework.roo.addon.jsf.managedbean.RooJsfManagedBean;
 import org.springframework.roo.addon.serializable.RooSerializable;
 
-import com.starit.janjoonweb.domain.JJBug;
-import com.starit.janjoonweb.domain.JJProject;
-import com.starit.janjoonweb.domain.JJTeststep;
+import com.starit.janjoonweb.domain.*;
+true
 
 @RooSerializable
 @RooJsfManagedBean(entity = JJBug.class, beanName = "jJBugBean")
