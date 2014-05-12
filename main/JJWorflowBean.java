@@ -1,4 +1,5 @@
-package com.starit.janjoonweb.ui.mb;
+
+rit.janjoonweb.ui.mb;
 
 import com.starit.janjoonweb.domain.JJWorflow;
 import org.springframework.roo.addon.jsf.managedbean.RooJsfManagedBean;

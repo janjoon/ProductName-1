@@ -1,0 +1,1068 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fa20ec017fa, pid=26219, tid=140334145718016
+#
+# JRE version: 6.0_27-b27
+# Java VM: OpenJDK 64-Bit Server VM (20.0-b12 mixed mode linux-amd64 compressed oops)
+# Derivative: IcedTea6 1.12.6
+# Distribution: Ubuntu 13.04, package 6b27-1.12.6-1ubuntu0.13.04.4
+# Problematic frame:
+# C  [libglib-2.0.so.0+0x717fa]  g_time_zone_get_offset+0x7a
+#
+# If you would like to submit a bug report, please include
+# instructions how to reproduce the bug and visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-6/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000016e7c700
+
+Registers:
+RAX=0x0000000057c0187f, RBX=0x00007fa216e7ca38, RCX=0x0000000000000001, RDX=0x0000000016e7c700
+RSP=0x00007fa216e7be68, RBP=0x00007fa22963a308, RSI=0x00007fa216e7c700, RDI=0x00007fa1d41e4b50
+R8 =0x0000000000000000, R9 =0x000000000000668a, R10=0x0000000000000008, R11=0x0000000000000246
+R12=0x000000000000001e, R13=0x0000000000000000, R14=0x00007fa22963a2e0, R15=0x0000000000000004
+RIP=0x00007fa20ec017fa, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fa216e7be68)
+0x00007fa216e7be68:   00007fa229429d92 0000000000000000
+0x00007fa216e7be78:   0000000000000000 0000000000000000
+0x00007fa216e7be88:   0000000000000000 00007fa229862060
+0x00007fa216e7be98:   00007fa227640090 0000000000000000
+0x00007fa216e7bea8:   00007fa229429f9c 0000000000000000
+0x00007fa216e7beb8:   00007fa216e7c700 00007fa216e7c700
+0x00007fa216e7bec8:   d1154715ec4b9515 0000000000000000
+0x00007fa216e7bed8:   00007fa229862060 00007fa227640090
+0x00007fa216e7bee8:   0000000000000000 2e516ada912b9515
+0x00007fa216e7bef8:   2e511590d2e59515 0000000000000000
+0x00007fa216e7bf08:   0000000000000000 0000000000000000
+0x00007fa216e7bf18:   0000000000000000 0000000000000000
+0x00007fa216e7bf28:   0000000000000000 0000000000000000
+0x00007fa216e7bf38:   0000000000000000 0000000000000000
+0x00007fa216e7bf48:   0000000000000000 0000000000000000
+0x00007fa216e7bf58:   0000000000000000 0000000000000000
+0x00007fa216e7bf68:   0000000000000000 0000000000000000
+0x00007fa216e7bf78:   0000000000000000 0000000000000000
+0x00007fa216e7bf88:   0000000000000000 0000000000000000
+0x00007fa216e7bf98:   0000000000000000 0000000000000000
+0x00007fa216e7bfa8:   0000000000000000 00007fa216e7c700
+0x00007fa216e7bfb8:   00007fa228d4aa0d 0000000000000000
+0x00007fa216e7bfc8:   0000000000000000 0000000000000000
+0x00007fa216e7bfd8:   0000000000000000 0000000000000000
+0x00007fa216e7bfe8:   0000000000000000 0000000000000000
+0x00007fa216e7bff8:   0000000000000000 0000000000000000
+0x00007fa216e7c008:   0000000000000000 0000000000000000
+0x00007fa216e7c018:   0000000000000000 0000000000000000
+0x00007fa216e7c028:   0000000000000000 0000000000000000
+0x00007fa216e7c038:   0000000000000000 0000000000000000
+0x00007fa216e7c048:   0000000000000000 0000000000000000
+0x00007fa216e7c058:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007fa20ec017fa)
+0x00007fa20ec017da:   66 0f 1f 44 00 00 48 89 c2 48 83 c0 18 44 8b 48
+0x00007fa20ec017ea:   ec 45 85 c9 74 0a 48 39 c8 75 eb 31 d2 48 01 f2
+0x00007fa20ec017fa:   8b 02 48 83 c4 08 c3 0f 1f 80 00 00 00 00 48 85
+0x00007fa20ec0180a:   c0 74 a5 3b 70 08 77 a0 83 ee 01 48 c1 e6 04 48 
+
+Register to memory mapping:
+
+RAX=0x0000000057c0187f is an unknown value
+RBX=0x00007fa216e7ca38 is an unknown value
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000016e7c700 is an unknown value
+RSP=0x00007fa216e7be68 is an unknown value
+RBP=0x00007fa22963a308: <offset 0x218308> in /lib/x86_64-linux-gnu/libpthread.so.0 at 0x00007fa229422000
+RSI=0x00007fa216e7c700 is an unknown value
+RDI=0x00007fa1d41e4b50 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x000000000000668a is an unknown value
+R10=0x0000000000000008 is an unknown value
+R11=0x0000000000000246 is an unknown value
+R12=0x000000000000001e is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007fa22963a2e0: <offset 0x2182e0> in /lib/x86_64-linux-gnu/libpthread.so.0 at 0x00007fa229422000
+R15=0x0000000000000004 is an unknown value
+
+
+Stack: [0x00007fa216c7c000,0x00007fa216e7d000],  sp=0x00007fa216e7be68,  free space=2047k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libglib-2.0.so.0+0x717fa]  g_time_zone_get_offset+0x7a
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 26240K, used 21177K [0x00000000f0000000, 0x00000000f2540000, 0x0000000100000000)
+  eden space 23552K, 78% used [0x00000000f0000000,0x00000000f1211838,0x00000000f1700000)
+  from space 2688K, 99% used [0x00000000f21d0000,0x00000000f246ce78,0x00000000f2470000)
+  to   space 832K, 0% used [0x00000000f2470000,0x00000000f2470000,0x00000000f2540000)
+ PSOldGen        total 21888K, used 15720K [0x00000000d0000000, 0x00000000d1560000, 0x00000000f0000000)
+  object space 21888K, 71% used [0x00000000d0000000,0x00000000d0f5a270,0x00000000d1560000)
+ PSPermGen       total 34688K, used 34672K [0x00000000b8000000, 0x00000000ba1e0000, 0x00000000d0000000)
+  object space 34688K, 99% used [0x00000000b8000000,0x00000000ba1dc0a0,0x00000000ba1e0000)
+
+Code Cache  [0x00007fa21d000000, 0x00007fa21d270000, 0x00007fa220000000)
+ total_blobs=1038 nmethods=538 adapters=452 free_code_cache=48145920 largest_free_block=84160
+
+Dynamic libraries:
+00400000-00409000 r-xp 00000000 08:04 11403406                           /usr/lib/jvm/java-6-openjdk-amd64/jre/bin/java
+00608000-00609000 r--p 00008000 08:04 11403406                           /usr/lib/jvm/java-6-openjdk-amd64/jre/bin/java
+00609000-0060a000 rw-p 00009000 08:04 11403406                           /usr/lib/jvm/java-6-openjdk-amd64/jre/bin/java
+00967000-00988000 rw-p 00000000 00:00 0                                  [heap]
+b8000000-ba1e0000 rw-p 00000000 00:00 0 
+ba1e0000-d0000000 rw-p 00000000 00:00 0 
+d0000000-d1560000 rw-p 00000000 00:00 0 
+d1560000-f0000000 rw-p 00000000 00:00 0 
+f0000000-f2540000 rw-p 00000000 00:00 0 
+f2540000-f27b0000 ---p 00000000 00:00 0 
+f27b0000-100000000 rw-p 00000000 00:00 0 
+7fa18c000000-7fa18c021000 rw-p 00000000 00:00 0 
+7fa18c021000-7fa190000000 ---p 00000000 00:00 0 
+7fa194000000-7fa194021000 rw-p 00000000 00:00 0 
+7fa194021000-7fa198000000 ---p 00000000 00:00 0 
+7fa198000000-7fa198021000 rw-p 00000000 00:00 0 
+7fa198021000-7fa19c000000 ---p 00000000 00:00 0 
+7fa19c000000-7fa19c02b000 rw-p 00000000 00:00 0 
+7fa19c02b000-7fa1a0000000 ---p 00000000 00:00 0 
+7fa1a0000000-7fa1a0021000 rw-p 00000000 00:00 0 
+7fa1a0021000-7fa1a4000000 ---p 00000000 00:00 0 
+7fa1a4000000-7fa1a4021000 rw-p 00000000 00:00 0 
+7fa1a4021000-7fa1a8000000 ---p 00000000 00:00 0 
+7fa1a8000000-7fa1a8021000 rw-p 00000000 00:00 0 
+7fa1a8021000-7fa1ac000000 ---p 00000000 00:00 0 
+7fa1ac000000-7fa1ac10a000 rw-p 00000000 00:00 0 
+7fa1ac10a000-7fa1b0000000 ---p 00000000 00:00 0 
+7fa1b0000000-7fa1b01f4000 rw-p 00000000 00:00 0 
+7fa1b01f4000-7fa1b4000000 ---p 00000000 00:00 0 
+7fa1b566d000-7fa1b5670000 ---p 00000000 00:00 0 
+7fa1b5670000-7fa1b586e000 rw-p 00000000 00:00 0                          [stack:26288]
+7fa1b586e000-7fa1b5871000 ---p 00000000 00:00 0 
+7fa1b5871000-7fa1b5a6f000 rw-p 00000000 00:00 0                          [stack:26287]
+7fa1b5a6f000-7fa1b5a72000 ---p 00000000 00:00 0 
+7fa1b5a72000-7fa1b5c70000 rw-p 00000000 00:00 0                          [stack:26286]
+7fa1b5c70000-7fa1b5c73000 ---p 00000000 00:00 0 
+7fa1b5c73000-7fa1b5e71000 rw-p 00000000 00:00 0                          [stack:26273]
+7fa1b5e71000-7fa1b5e74000 ---p 00000000 00:00 0 
+7fa1b5e74000-7fa1b6072000 rw-p 00000000 00:00 0                          [stack:26272]
+7fa1b6072000-7fa1b6078000 r-xp 00000000 08:04 14293032                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fa1b6078000-7fa1b6277000 ---p 00006000 08:04 14293032                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fa1b6277000-7fa1b6278000 r--p 00005000 08:04 14293032                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fa1b6278000-7fa1b6279000 rw-p 00006000 08:04 14293032                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fa1b6279000-7fa1b627c000 ---p 00000000 00:00 0 
+7fa1b627c000-7fa1b647a000 rw-p 00000000 00:00 0                          [stack:26270]
+7fa1b647a000-7fa1b647d000 ---p 00000000 00:00 0 
+7fa1b647d000-7fa1b667b000 rw-p 00000000 00:00 0                          [stack:26269]
+7fa1b667b000-7fa1b668c000 r-xp 00000000 08:04 14293779                   /usr/lib/jni/libjnidispatch.so
+7fa1b668c000-7fa1b688b000 ---p 00011000 08:04 14293779                   /usr/lib/jni/libjnidispatch.so
+7fa1b688b000-7fa1b688c000 r--p 00010000 08:04 14293779                   /usr/lib/jni/libjnidispatch.so
+7fa1b688c000-7fa1b688d000 rw-p 00011000 08:04 14293779                   /usr/lib/jni/libjnidispatch.so
+7fa1b688d000-7fa1b6890000 ---p 00000000 00:00 0 
+7fa1b6890000-7fa1b6a8e000 rw-p 00000000 00:00 0                          [stack:26268]
+7fa1b6a8e000-7fa1b6a8f000 r-xp 00000000 08:04 11797875                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cedilla.so
+7fa1b6a8f000-7fa1b6c8e000 ---p 00001000 08:04 11797875                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cedilla.so
+7fa1b6c8e000-7fa1b6c8f000 r--p 00000000 08:04 11797875                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cedilla.so
+7fa1b6c8f000-7fa1b6c90000 rw-p 00001000 08:04 11797875                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-cedilla.so
+7fa1b6c90000-7fa1b7dff000 r-xp 00000000 08:04 11276383                   /usr/lib/x86_64-linux-gnu/libicudata.so.48.1.1
+7fa1b7dff000-7fa1b7ffe000 ---p 0116f000 08:04 11276383                   /usr/lib/x86_64-linux-gnu/libicudata.so.48.1.1
+7fa1b7ffe000-7fa1b7fff000 r--p 0116e000 08:04 11276383                   /usr/lib/x86_64-linux-gnu/libicudata.so.48.1.1
+7fa1b7fff000-7fa1b8000000 rw-p 0116f000 08:04 11276383                   /usr/lib/x86_64-linux-gnu/libicudata.so.48.1.1
+7fa1b8000000-7fa1b8fbc000 rw-p 00000000 00:00 0 
+7fa1b8fbc000-7fa1bc000000 ---p 00000000 00:00 0 
+7fa1bc000000-7fa1bced6000 rw-p 00000000 00:00 0 
+7fa1bced6000-7fa1c0000000 ---p 00000000 00:00 0 
+7fa1c0000000-7fa1c0021000 rw-p 00000000 00:00 0 
+7fa1c0021000-7fa1c4000000 ---p 00000000 00:00 0 
+7fa1c4000000-7fa1c4192000 rw-p 00000000 00:00 0 
+7fa1c4192000-7fa1c8000000 ---p 00000000 00:00 0 
+7fa1c8000000-7fa1c8021000 rw-p 00000000 00:00 0 
+7fa1c8021000-7fa1cc000000 ---p 00000000 00:00 0 
+7fa1cc000000-7fa1cc021000 rw-p 00000000 00:00 0 
+7fa1cc021000-7fa1d0000000 ---p 00000000 00:00 0 
+7fa1d0000000-7fa1d0085000 rw-p 00000000 00:00 0 
+7fa1d0085000-7fa1d4000000 ---p 00000000 00:00 0 
+7fa1d4000000-7fa1d4825000 rw-p 00000000 00:00 0 
+7fa1d4825000-7fa1d8000000 ---p 00000000 00:00 0 
+7fa1d8000000-7fa1d8021000 rw-p 00000000 00:00 0 
+7fa1d8021000-7fa1dc000000 ---p 00000000 00:00 0 
+7fa1dc000000-7fa1dc021000 rw-p 00000000 00:00 0 
+7fa1dc021000-7fa1e0000000 ---p 00000000 00:00 0 
+7fa1e0000000-7fa1e0021000 rw-p 00000000 00:00 0 
+7fa1e0021000-7fa1e4000000 ---p 00000000 00:00 0 
+7fa1e4000000-7fa1e4021000 rw-p 00000000 00:00 0 
+7fa1e4021000-7fa1e8000000 ---p 00000000 00:00 0 
+7fa1e8000000-7fa1ebffe000 rw-p 00000000 00:00 0 
+7fa1ebffe000-7fa1ec000000 ---p 00000000 00:00 0 
+7fa1ec000000-7fa1ec021000 rw-p 00000000 00:00 0 
+7fa1ec021000-7fa1f0000000 ---p 00000000 00:00 0 
+7fa1f0000000-7fa1f0021000 rw-p 00000000 00:00 0 
+7fa1f0021000-7fa1f4000000 ---p 00000000 00:00 0 
+7fa1f4000000-7fa1f7ff0000 rw-p 00000000 00:00 0 
+7fa1f7ff0000-7fa1f8000000 ---p 00000000 00:00 0 
+7fa1f8000000-7fa1f8021000 rw-p 00000000 00:00 0 
+7fa1f8021000-7fa1fc000000 ---p 00000000 00:00 0 
+7fa1fc000000-7fa1fc021000 rw-p 00000000 00:00 0 
+7fa1fc021000-7fa200000000 ---p 00000000 00:00 0 
+7fa200000000-7fa200024000 rw-p 00000000 00:00 0 
+7fa200024000-7fa204000000 ---p 00000000 00:00 0 
+7fa204000000-7fa204099000 rw-p 00000000 00:00 0 
+7fa204099000-7fa208000000 ---p 00000000 00:00 0 
+7fa208000000-7fa208021000 rw-p 00000000 00:00 0 
+7fa208021000-7fa20c000000 ---p 00000000 00:00 0 
+7fa20c045000-7fa20c0d0000 rw-s 00000000 00:04 52494359                   /SYSV00000000 (deleted)
+7fa20c0d0000-7fa20c180000 r--p 00000000 08:04 12583616                   /usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf
+7fa20c180000-7fa20c183000 r-xp 00000000 08:04 11798125                   /usr/lib/x86_64-linux-gnu/pango/1.8.0/modules/pango-basic-fc.so
+7fa20c183000-7fa20c382000 ---p 00003000 08:04 11798125                   /usr/lib/x86_64-linux-gnu/pango/1.8.0/modules/pango-basic-fc.so
+7fa20c382000-7fa20c383000 r--p 00002000 08:04 11798125                   /usr/lib/x86_64-linux-gnu/pango/1.8.0/modules/pango-basic-fc.so
+7fa20c383000-7fa20c384000 rw-p 00003000 08:04 11798125                   /usr/lib/x86_64-linux-gnu/pango/1.8.0/modules/pango-basic-fc.so
+7fa20c384000-7fa20c38d000 r-xp 00000000 08:04 11797871                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libpixmap.so
+7fa20c38d000-7fa20c58d000 ---p 00009000 08:04 11797871                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libpixmap.so
+7fa20c58d000-7fa20c58e000 r--p 00009000 08:04 11797871                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libpixmap.so
+7fa20c58e000-7fa20c58f000 rw-p 0000a000 08:04 11797871                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libpixmap.so
+7fa20c58f000-7fa20c5be000 r-xp 00000000 08:04 11797870                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7fa20c5be000-7fa20c7be000 ---p 0002f000 08:04 11797870                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7fa20c7be000-7fa20c7bf000 r--p 0002f000 08:04 11797870                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7fa20c7bf000-7fa20c7c0000 rw-p 00030000 08:04 11797870                   /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7fa20c7c0000-7fa20c916000 r-xp 00000000 08:04 11276386                   /usr/lib/x86_64-linux-gnu/libicuuc.so.48.1.1
+7fa20c916000-7fa20cb15000 ---p 00156000 08:04 11276386                   /usr/lib/x86_64-linux-gnu/libicuuc.so.48.1.1
+7fa20cb15000-7fa20cb26000 r--p 00155000 08:04 11276386                   /usr/lib/x86_64-linux-gnu/libicuuc.so.48.1.1
+7fa20cb26000-7fa20cb27000 rw-p 00166000 08:04 11276386                   /usr/lib/x86_64-linux-gnu/libicuuc.so.48.1.1
+7fa20cb27000-7fa20cb2b000 rw-p 00000000 00:00 0 
+7fa20cb2b000-7fa20cb5d000 r-xp 00000000 08:04 11276384                   /usr/lib/x86_64-linux-gnu/libicule.so.48.1.1
+7fa20cb5d000-7fa20cd5d000 ---p 00032000 08:04 11276384                   /usr/lib/x86_64-linux-gnu/libicule.so.48.1.1
+7fa20cd5d000-7fa20cd5f000 r--p 00032000 08:04 11276384                   /usr/lib/x86_64-linux-gnu/libicule.so.48.1.1
+7fa20cd5f000-7fa20cd60000 rw-p 00034000 08:04 11276384                   /usr/lib/x86_64-linux-gnu/libicule.so.48.1.1
+7fa20cd60000-7fa20cd9d000 r-xp 00000000 08:04 2756313                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fa20cd9d000-7fa20cf9d000 ---p 0003d000 08:04 2756313                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fa20cf9d000-7fa20cf9e000 r--p 0003d000 08:04 2756313                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fa20cf9e000-7fa20cf9f000 rw-p 0003e000 08:04 2756313                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fa20cf9f000-7fa20cfa6000 r-xp 00000000 08:04 11279332                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.1
+7fa20cfa6000-7fa20d1a5000 ---p 00007000 08:04 11279332                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.1
+7fa20d1a5000-7fa20d1a6000 r--p 00006000 08:04 11279332                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.1
+7fa20d1a6000-7fa20d1a7000 rw-p 00007000 08:04 11279332                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.1
+7fa20d1a7000-7fa20d1cd000 r-xp 00000000 08:04 2756238                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fa20d1cd000-7fa20d3cd000 ---p 00026000 08:04 2756238                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fa20d3cd000-7fa20d3cf000 r--p 00026000 08:04 2756238                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fa20d3cf000-7fa20d3d0000 rw-p 00028000 08:04 2756238                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fa20d3d0000-7fa20d465000 r-xp 00000000 08:04 11279611                   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.913.0
+7fa20d465000-7fa20d664000 ---p 00095000 08:04 11279611                   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.913.0
+7fa20d664000-7fa20d666000 r--p 00094000 08:04 11279611                   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.913.0
+7fa20d666000-7fa20d667000 rw-p 00096000 08:04 11279611                   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.913.0
+7fa20d667000-7fa20d67d000 r-xp 00000000 08:04 2756469                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7fa20d67d000-7fa20d87d000 ---p 00016000 08:04 2756469                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7fa20d87d000-7fa20d87e000 r--p 00016000 08:04 2756469                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7fa20d87e000-7fa20d87f000 rw-p 00017000 08:04 2756469                    /lib/x86_64-linux-gnu/libresolv-2.17.so
+7fa20d87f000-7fa20d881000 rw-p 00000000 00:00 0 
+7fa20d881000-7fa20d89e000 r-xp 00000000 08:04 2756340                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fa20d89e000-7fa20da9d000 ---p 0001d000 08:04 2756340                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fa20da9d000-7fa20da9e000 r--p 0001c000 08:04 2756340                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fa20da9e000-7fa20da9f000 rw-p 0001d000 08:04 2756340                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fa20da9f000-7fa20daa0000 rw-p 00000000 00:00 0 
+7fa20daa0000-7fa20daa8000 r-xp 00000000 08:04 11277647                   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7fa20daa8000-7fa20dca8000 ---p 00008000 08:04 11277647                   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7fa20dca8000-7fa20dca9000 r--p 00008000 08:04 11277647                   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7fa20dca9000-7fa20dcaa000 rw-p 00009000 08:04 11277647                   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7fa20dcaa000-7fa20dcac000 r-xp 00000000 08:04 11273600                   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7fa20dcac000-7fa20deab000 ---p 00002000 08:04 11273600                   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7fa20deab000-7fa20deac000 r--p 00001000 08:04 11273600                   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7fa20deac000-7fa20dead000 rw-p 00002000 08:04 11273600                   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7fa20dead000-7fa20ded2000 r-xp 00000000 08:04 2756325                    /lib/x86_64-linux-gnu/libpng12.so.0.49.0
+7fa20ded2000-7fa20e0d1000 ---p 00025000 08:04 2756325                    /lib/x86_64-linux-gnu/libpng12.so.0.49.0
+7fa20e0d1000-7fa20e0d2000 r--p 00024000 08:04 2756325                    /lib/x86_64-linux-gnu/libpng12.so.0.49.0
+7fa20e0d2000-7fa20e0d3000 rw-p 00025000 08:04 2756325                    /lib/x86_64-linux-gnu/libpng12.so.0.49.0
+7fa20e0d3000-7fa20e175000 r-xp 00000000 08:04 11276429                   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.30.2
+7fa20e175000-7fa20e375000 ---p 000a2000 08:04 11276429                   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.30.2
+7fa20e375000-7fa20e37c000 r--p 000a2000 08:04 11276429                   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.30.2
+7fa20e37c000-7fa20e37d000 rw-p 000a9000 08:04 11276429                   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.30.2
+7fa20e37d000-7fa20e37f000 r-xp 00000000 08:04 11279054                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fa20e37f000-7fa20e57e000 ---p 00002000 08:04 11279054                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fa20e57e000-7fa20e57f000 r--p 00001000 08:04 11279054                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fa20e57f000-7fa20e580000 rw-p 00002000 08:04 11279054                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fa20e580000-7fa20e582000 r-xp 00000000 08:04 11279050                   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7fa20e582000-7fa20e781000 ---p 00002000 08:04 11279050                   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7fa20e781000-7fa20e782000 r--p 00001000 08:04 11279050                   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7fa20e782000-7fa20e783000 rw-p 00002000 08:04 11279050                   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7fa20e783000-7fa20e78c000 r-xp 00000000 08:04 11277655                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fa20e78c000-7fa20e98b000 ---p 00009000 08:04 11277655                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fa20e98b000-7fa20e98c000 r--p 00008000 08:04 11277655                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fa20e98c000-7fa20e98d000 rw-p 00009000 08:04 11277655                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fa20e98d000-7fa20e98f000 r-xp 00000000 08:04 11277643                   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7fa20e98f000-7fa20eb8e000 ---p 00002000 08:04 11277643                   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7fa20eb8e000-7fa20eb8f000 r--p 00001000 08:04 11277643                   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7fa20eb8f000-7fa20eb90000 rw-p 00002000 08:04 11277643                   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7fa20eb90000-7fa20ec89000 r-xp 00000000 08:04 2756247                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.3600.0
+7fa20ec89000-7fa20ee89000 ---p 000f9000 08:04 2756247                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.3600.0
+7fa20ee89000-7fa20ee8a000 r--p 000f9000 08:04 2756247                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.3600.0
+7fa20ee8a000-7fa20ee8b000 rw-p 000fa000 08:04 2756247                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.3600.0
+7fa20ee8b000-7fa20ee8c000 rw-p 00000000 00:00 0 
+7fa20ee8c000-7fa20eed9000 r-xp 00000000 08:04 11279482                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3600.0
+7fa20eed9000-7fa20f0d9000 ---p 0004d000 08:04 11279482                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3600.0
+7fa20f0d9000-7fa20f0da000 r--p 0004d000 08:04 11279482                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3600.0
+7fa20f0da000-7fa20f0db000 rw-p 0004e000 08:04 11279482                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3600.0
+7fa20f0db000-7fa20f112000 r-xp 00000000 08:04 11279364                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.6.2
+7fa20f112000-7fa20f312000 ---p 00037000 08:04 11279364                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.6.2
+7fa20f312000-7fa20f313000 r--p 00037000 08:04 11279364                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.6.2
+7fa20f313000-7fa20f314000 rw-p 00038000 08:04 11279364                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.6.2
+7fa20f314000-7fa20f315000 rw-p 00000000 00:00 0 
+7fa20f315000-7fa20f35d000 r-xp 00000000 08:04 11279799                   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3200.5
+7fa20f35d000-7fa20f55d000 ---p 00048000 08:04 11279799                   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3200.5
+7fa20f55d000-7fa20f55f000 r--p 00048000 08:04 11279799                   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3200.5
+7fa20f55f000-7fa20f560000 rw-p 0004a000 08:04 11279799                   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3200.5
+7fa20f560000-7fa20f6b3000 r-xp 00000000 08:04 11279446                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3600.0
+7fa20f6b3000-7fa20f8b2000 ---p 00153000 08:04 11279446                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3600.0
+7fa20f8b2000-7fa20f8b6000 r--p 00152000 08:04 11279446                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3600.0
+7fa20f8b6000-7fa20f8b8000 rw-p 00156000 08:04 11279446                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3600.0
+7fa20f8b8000-7fa20f8ba000 rw-p 00000000 00:00 0 
+7fa20f8ba000-7fa20f8d8000 r-xp 00000000 08:04 11279425                   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2800.0
+7fa20f8d8000-7fa20fad8000 ---p 0001e000 08:04 11279425                   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2800.0
+7fa20fad8000-7fa20fad9000 r--p 0001e000 08:04 11279425                   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2800.0
+7fa20fad9000-7fa20fada000 rw-p 0001f000 08:04 11279425                   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2800.0
+7fa20fada000-7fa20fbd8000 r-xp 00000000 08:04 11279177                   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11200.14
+7fa20fbd8000-7fa20fdd8000 ---p 000fe000 08:04 11279177                   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11200.14
+7fa20fdd8000-7fa20fddb000 r--p 000fe000 08:04 11279177                   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11200.14
+7fa20fddb000-7fa20fddc000 rw-p 00101000 08:04 11279177                   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11200.14
+7fa20fddc000-7fa20fdde000 rw-p 00000000 00:00 0 
+7fa20fdde000-7fa20fdfe000 r-xp 00000000 08:04 11279127                   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20809.1
+7fa20fdfe000-7fa20fffd000 ---p 00020000 08:04 11279127                   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20809.1
+7fa20fffd000-7fa20ffff000 r--p 0001f000 08:04 11279127                   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20809.1
+7fa20ffff000-7fa210000000 rw-p 00021000 08:04 11279127                   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20809.1
+7fa210000000-7fa210021000 rw-p 00000000 00:00 0 
+7fa210021000-7fa214000000 ---p 00000000 00:00 0 
+7fa21400b000-7fa21401e000 r-xp 00000000 08:04 11279803                   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3200.5
+7fa21401e000-7fa21421d000 ---p 00013000 08:04 11279803                   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3200.5
+7fa21421d000-7fa21421e000 r--p 00012000 08:04 11279803                   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3200.5
+7fa21421e000-7fa21421f000 rw-p 00013000 08:04 11279803                   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3200.5
+7fa21421f000-7fa21422a000 r-xp 00000000 08:04 11279801                   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3200.5
+7fa21422a000-7fa21442a000 ---p 0000b000 08:04 11279801                   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3200.5
+7fa21442a000-7fa21442b000 r--p 0000b000 08:04 11279801                   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3200.5
+7fa21442b000-7fa21442c000 rw-p 0000c000 08:04 11279801                   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3200.5
+7fa21442c000-7fa21442f000 r-xp 00000000 08:04 11279458                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3600.0
+7fa21442f000-7fa21462e000 ---p 00003000 08:04 11279458                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3600.0
+7fa21462e000-7fa21462f000 r--p 00002000 08:04 11279458                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3600.0
+7fa21462f000-7fa214630000 rw-p 00003000 08:04 11279458                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3600.0
+7fa214630000-7fa2146dd000 r-xp 00000000 08:04 11279423                   /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.17
+7fa2146dd000-7fa2148dc000 ---p 000ad000 08:04 11279423                   /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.17
+7fa2148dc000-7fa2148e0000 r--p 000ac000 08:04 11279423                   /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.17
+7fa2148e0000-7fa2148e2000 rw-p 000b0000 08:04 11279423                   /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.17
+7fa2148e2000-7fa214d0f000 r-xp 00000000 08:04 11279595                   /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.17
+7fa214d0f000-7fa214f0e000 ---p 0042d000 08:04 11279595                   /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.17
+7fa214f0e000-7fa214f15000 r--p 0042c000 08:04 11279595                   /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.17
+7fa214f15000-7fa214f19000 rw-p 00433000 08:04 11279595                   /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.17
+7fa214f19000-7fa214f1b000 rw-p 00000000 00:00 0 
+7fa214f1b000-7fa214f1e000 ---p 00000000 00:00 0 
+7fa214f1e000-7fa21511c000 rw-p 00000000 00:00 0                          [stack:26255]
+7fa21511c000-7fa215125000 r--s 00046000 08:04 11803202                   /usr/share/java/jna-platform-3.2.7.jar
+7fa215125000-7fa21512d000 r--s 00041000 08:04 11803282                   /usr/share/java/svn-javahl.jar
+7fa21512d000-7fa215159000 r--s 00303000 08:04 11803299                   /usr/share/java/svnkit-1.7.5.jar
+7fa215159000-7fa21515f000 r--s 0006e000 08:04 14549782                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-kit.jar
+7fa21515f000-7fa215162000 r--s 0002a000 08:04 14549780                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-refactoring.jar
+7fa215162000-7fa21517f000 r--s 002c1000 08:04 14549776                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-project.jar
+7fa21517f000-7fa21518f000 r--s 000c2000 08:04 11803178                   /usr/share/java/freemarker-2.3.18.jar
+7fa21518f000-7fa215190000 r--s 00005000 08:04 12980246                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-freemarker.jar
+7fa215190000-7fa215192000 r--s 00000000 08:04 14549779                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-ant.jar
+7fa215193000-7fa215195000 r--s 00004000 08:04 12980317                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-drivers.jar
+7fa215195000-7fa215199000 r--s 00055000 08:04 12980319                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-mysql.jar
+7fa215199000-7fa21519e000 r--s 00047000 08:04 12980295                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-sql-editor.jar
+7fa21519e000-7fa2151a2000 r--s 00035000 08:04 12980332                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-core.jar
+7fa2151a2000-7fa2151a7000 r--s 00060000 08:04 12980372                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-dataview.jar
+7fa2151a7000-7fa2151bd000 r--s 00108000 08:04 11803306                   /usr/share/java/swingx1-1.0.jar
+7fa2151bd000-7fa2151be000 r--s 00001000 08:04 12980240                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-swingx.jar
+7fa2151be000-7fa2151c3000 r--s 0006c000 08:04 12980268                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-sql-visualeditor.jar
+7fa2151c3000-7fa2151cf000 r--s 000f1000 08:04 11407294                   /usr/share/netbeans/platform13/modules/org-netbeans-api-visual.jar
+7fa2151cf000-7fa2151df000 r--s 00159000 08:04 14549719                   /usr/share/netbeans/java5/modules/org-netbeans-modules-debugger-jpda-ui.jar
+7fa2151df000-7fa2151e9000 r--s 00144000 08:04 14549732                   /usr/share/netbeans/java5/modules/org-netbeans-modules-debugger-jpda.jar
+7fa2151e9000-7fa2151ee000 r--s 00074000 08:04 14549676                   /usr/share/netbeans/java5/modules/org-netbeans-modules-debugger-jpda-projects.jar
+7fa2151ee000-7fa2151f0000 r--s 00022000 08:04 12980264                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-derby.jar
+7fa2151f0000-7fa2151f1000 r--s 00009000 08:04 11407295                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-editor-mimelookup-impl.jar
+7fa2151f1000-7fa2151f5000 r--s 00046000 08:04 14549737                   /usr/share/netbeans/java5/modules/org-netbeans-modules-form-j2ee.jar
+7fa2151f5000-7fa2151f6000 r--s 00000000 08:04 14549686                   /usr/share/netbeans/java5/modules/org-netbeans-modules-form-kit.jar
+7fa2151f6000-7fa215200000 r--s 00149000 08:04 12980261                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-html-editor.jar
+7fa215200000-7fa215202000 r--s 00008000 08:04 14549716                   /usr/share/netbeans/java5/modules/org-netbeans-modules-hudson-ant.jar
+7fa215202000-7fa215203000 r--s 00005000 08:04 12980254                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-hudson-mercurial.jar
+7fa215203000-7fa215204000 r--s 00006000 08:04 12980329                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-hudson-subversion.jar
+7fa215204000-7fa21520b000 r--s 00063000 08:04 12980331                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-hudson.jar
+7fa21520b000-7fa21520d000 r--s 00018000 08:04 14549730                   /usr/share/netbeans/java5/modules/org-netbeans-modules-i18n-form.jar
+7fa21520d000-7fa21520e000 r--s 00000000 08:04 14550026                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-ide-branding-kit.jar
+7fa21520e000-7fa21520f000 r--s 00001000 08:04 14550029                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-ide-branding.jar
+7fa21520f000-7fa215211000 r--s 00014000 08:04 14550028                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-autoupdate-pluginimporter.jar
+7fa215211000-7fa215222000 r--s 001f8000 08:04 14549720                   /usr/share/netbeans/java5/modules/org-netbeans-modules-j2ee-persistence.jar
+7fa215222000-7fa215224000 r--s 0000f000 08:04 14549714                   /usr/share/netbeans/java5/modules/org-netbeans-modules-j2ee-core-utilities.jar
+7fa215224000-7fa215225000 r--s 00006000 08:04 12980271                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-dbapi.jar
+7fa215225000-7fa21522d000 r--s 0007b000 08:04 14549728                   /usr/share/netbeans/java5/modules/org-netbeans-modules-dbschema.jar
+7fa21522d000-7fa215230000 r--s 0003f000 08:04 13245409                   /usr/share/netbeans/ide14/modules/ext/ddl.jar
+7fa215230000-7fa215241000 r--s 00152000 08:04 12980365                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db.jar
+7fa215241000-7fa215245000 r--s 0002a000 08:04 12980377                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-db-metadata-model.jar
+7fa215245000-7fa215246000 r--s 00001000 08:04 14549701                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-kit.jar
+7fa215246000-7fa21525a000 r--s 000a3000 08:04 14549709                   /usr/share/netbeans/java5/modules/docs/org-netbeans-modules-java-helpset.jar
+7fa21525a000-7fa21525b000 r--s 00002000 08:04 14549712                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-helpset.jar
+7fa21525b000-7fa21525c000 r--s 00000000 08:04 14549677                   /usr/share/netbeans/java5/modules/org-netbeans-modules-ant-kit.jar
+7fa21525c000-7fa21525e000 r--s 00000000 08:04 12980304                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-ide-kit.jar
+7fa21525e000-7fa215260000 r--s 00043000 08:04 12980270                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-defaults.jar
+7fa215262000-7fa215264000 r--s 00021000 08:04 12980347                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-macros.jar
+7fa215264000-7fa215266000 r--s 00008000 08:04 12980342                   /usr/share/netbeans/ide14/modules/org-netbeans-core-ide.jar
+7fa215266000-7fa215267000 r--s 00000000 08:04 11408441                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-core-kit.jar
+7fa215267000-7fa215268000 r--s 00000000 08:04 14550032                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-core-windows_nb.jar
+7fa215268000-7fa215274000 r--s 00160000 08:04 11407290                   /usr/share/netbeans/platform13/modules/org-netbeans-core-windows.jar
+7fa215274000-7fa21527b000 r--s 0006e000 08:04 11803172                   /usr/share/java/org.apache.felix.framework.jar
+7fa21527c000-7fa21527f000 r--s 00017000 08:04 11803181                   /usr/share/java/osgi.core.jar
+7fa21527f000-7fa215286000 r--s 00031000 08:04 11803185                   /usr/share/java/osgi.compendium.jar
+7fa215286000-7fa215287000 r--s 00000000 08:04 11407278                   /usr/share/netbeans/platform13/modules/org-netbeans-libs-osgi.jar
+7fa215287000-7fa215288000 r--s 00003000 08:04 12980351                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-plain.jar
+7fa215288000-7fa21528a000 r--s 0000d000 08:04 12980357                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-dlight-terminal.jar
+7fa21528a000-7fa215294000 r--s 000b6000 08:04 12980269                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-dlight-nativeexecution.jar
+7fa215294000-7fa215295000 r--s 00000000 08:04 12980360                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-kit.jar
+7fa215295000-7fa21529a000 r--s 00062000 08:04 12980330                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-html.jar
+7fa21529a000-7fa21529e000 r--s 00039000 08:04 12980244                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-html-editor-lib.jar
+7fa21529e000-7fa2152a0000 r--s 00016000 08:04 12980324                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-image.jar
+7fa2152a0000-7fa2152a2000 r--s 00016000 08:04 11803176                   /usr/share/java/flute-1.1-SNAPSHOT.jar
+7fa2152a2000-7fa2152a4000 r--s 00002000 08:04 11803280                   /usr/share/java/sac-1.3.jar
+7fa2152a4000-7fa2152ae000 r--s 00087000 08:04 12980286                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-css-visual.jar
+7fa2152ae000-7fa2152b1000 r--s 0003d000 08:04 11407296                   /usr/share/netbeans/platform13/modules/org-netbeans-core-output2.jar
+7fa2152b1000-7fa2152b8000 r--s 000b9000 08:04 12980383                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-css-editor.jar
+7fa2152b8000-7fa2152b9000 r--s 00001000 08:04 12980290                   /usr/share/netbeans/ide14/modules/org-netbeans-core-browser.jar
+7fa2152b9000-7fa2152ba000 r--s 00024000 08:04 14549777                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-osgidemo.jar
+7fa2152ba000-7fa2152bc000 r--s 00013000 08:04 12980354                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-bookmarks.jar
+7fa2152bc000-7fa2152bf000 r--s 00025000 08:04 14549710                   /usr/share/netbeans/java5/modules/org-netbeans-modules-ant-debugger.jar
+7fa2152bf000-7fa2152c2000 r--s 00021000 08:04 14549681                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-debug.jar
+7fa2152c2000-7fa2152c7000 r--s 00067000 08:04 14549697                   /usr/share/netbeans/java5/modules/org-netbeans-modules-i18n.jar
+7fa2152c7000-7fa2152c9000 r--s 00061000 08:04 14549698                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-examples.jar
+7fa2152c9000-7fa2152ce000 r--s 0005e000 08:04 14549706                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-freeform.jar
+7fa2152ce000-7fa2152d2000 r--s 00043000 08:04 14549736                   /usr/share/netbeans/java5/modules/org-netbeans-modules-ant-freeform.jar
+7fa2152d2000-7fa2152d9000 r--s 00083000 08:04 14549693                   /usr/share/netbeans/java5/modules/org-netbeans-modules-beans.jar
+7fa2152d9000-7fa2152e1000 r--s 00081000 08:04 14549689                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-navigation.jar
+7fa2152e1000-7fa2152e3000 r--s 0000e000 08:04 14549675                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-source-ant.jar
+7fa2152e3000-7fa2152e7000 r--s 00052000 08:04 14549707                   /usr/share/netbeans/java5/modules/org-netbeans-modules-javadoc.jar
+7fa2152e7000-7fa2152f9000 r--s 00248000 08:04 14549683                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-hints.jar
+7fa2152f9000-7fa215307000 r--s 001b1000 08:04 14549685                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-editor.jar
+7fa215307000-7fa215309000 r--s 00004000 08:04 14549704                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-hints-processor.jar
+7fa215309000-7fa21530c000 r--s 00032000 08:04 14549699                   /usr/share/netbeans/java5/modules/org-netbeans-modules-javawebstart.jar
+7fa21530c000-7fa215311000 r--s 00097000 08:04 14549735                   /usr/share/netbeans/java5/modules/org-netbeans-modules-junit.jar
+7fa215311000-7fa215312000 r--s 00005000 08:04 12980259                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-gototest.jar
+7fa215312000-7fa215316000 r--s 00033000 08:04 12980309                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-gsf-testrunner.jar
+7fa215316000-7fa21531e000 r--s 000b6000 08:04 11407271                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-autoupdate-ui.jar
+7fa21531e000-7fa215325000 r--s 00080000 08:04 14549694                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-project.jar
+7fa215325000-7fa21532b000 r--s 00085000 08:04 12980363                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-project-ant.jar
+7fa21532b000-7fa215330000 r--s 00038000 08:04 12980333                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-catalog.jar
+7fa215330000-7fa215333000 r--s 00020000 08:04 14549695                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-platform.jar
+7fa215333000-7fa215337000 r--s 00038000 08:04 12980289                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-project-libraries.jar
+7fa215337000-7fa215338000 r--s 00001000 08:04 14550036                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-modules-autoupdate-ui_nb.jar
+7fa215338000-7fa21533c000 r--s 00025000 08:04 12980266                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-extexecution.jar
+7fa21533c000-7fa21533e000 r--s 00000000 08:04 14549713                   /usr/share/netbeans/java5/modules/org-netbeans-modules-junitlib.jar
+7fa21533e000-7fa215345000 r--s 00033000 08:04 11802634                   /usr/share/java/junit4-4.10.jar
+7fa21534b000-7fa21534c000 r--s 00006000 08:04 12980340                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-languages-diff.jar
+7fa21534c000-7fa21534e000 r--s 00005000 08:04 12980322                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-languages-manifest.jar
+7fa21534e000-7fa215350000 r--s 0001b000 08:04 12980275                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-languages-yaml.jar
+7fa215350000-7fa215355000 r--s 00034000 08:04 11803211                   /usr/share/java/jvyamlb-0.2.5.jar
+7fa215355000-7fa215356000 r--s 00000000 08:04 12980326                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-jvyamlb.jar
+7fa215356000-7fa215357000 r--s 00002000 08:04 11803134                   /usr/share/java/bytelist-1.0.6.jar
+7fa215357000-7fa215358000 r--s 00000000 08:04 12980321                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-bytelist.jar
+7fa215358000-7fa215359000 r--s 00002000 08:04 12980374                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-lexer-nbbridge.jar
+7fa215359000-7fa21535c000 r--s 0002f000 08:04 12980256                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-localhistory.jar
+7fa21535c000-7fa21535e000 r--s 0000d000 08:04 13129765                   /usr/share/netbeans/ide14/modules/docs/org-netbeans-modules-mercurial.jar
+7fa21535e000-7fa21536d000 r--s 00187000 08:04 12980233                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-mercurial.jar
+7fa21536d000-7fa215370000 r--s 00032000 08:04 11408445                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-print.jar
+7fa215370000-7fa215372000 r--s 00001000 08:04 12980278                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-print-editor.jar
+7fa215372000-7fa215374000 r--s 0001a000 08:04 11407298                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-progress-ui.jar
+7fa215374000-7fa215375000 r--s 00004000 08:04 14549679                   /usr/share/netbeans/java5/modules/org-netbeans-modules-projectimport-eclipse-j2se.jar
+7fa215375000-7fa215378000 r--s 0004a000 08:04 14549703                   /usr/share/netbeans/java5/modules/org-netbeans-modules-projectimport-eclipse-core.jar
+7fa215378000-7fa21537c000 r--s 00049000 08:04 14549696                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-j2seplatform.jar
+7fa21537c000-7fa21537d000 r--s 00001000 08:04 12980255                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-projectui-buildmenu.jar
+7fa21537d000-7fa215389000 r--s 00149000 08:04 14549678                   /usr/share/netbeans/java5/modules/org-netbeans-modules-refactoring-java.jar
+7fa215389000-7fa215390000 r--s 00105000 08:04 12980272                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-schema2beans.jar
+7fa215390000-7fa215393000 r--s 00031000 08:04 11407282                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-settings.jar
+7fa215393000-7fa215395000 r--s 00005000 08:04 12980235                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-spellchecker-bindings-htmlxml.jar
+7fa215395000-7fa215397000 r--s 00008000 08:04 12980320                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-html-lexer.jar
+7fa215397000-7fa215398000 r--s 00011000 08:04 14549778                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-paintapp.jar
+7fa215398000-7fa215399000 r--s 0000e000 08:04 14549724                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-editor-lib.jar
+7fa215399000-7fa21539a000 r--s 00003000 08:04 12980313                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-spellchecker-bindings-properties.jar
+7fa21539b000-7fa21539c000 r--s 00001000 08:04 12980231                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-spellchecker-kit.jar
+7fa21539c000-7fa2153a0000 r--s 00029000 08:04 12980337                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-spellchecker.jar
+7fa2153a0000-7fa2153a1000 r--s 00001000 08:04 12980323                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-plain-lib.jar
+7fa2153a1000-7fa2153a4000 r--s 00016000 08:04 13129768                   /usr/share/netbeans/ide14/modules/docs/org-netbeans-modules-subversion.jar
+7fa2153a4000-7fa2153ba000 r--s 00244000 08:04 12980334                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-subversion.jar
+7fa2153ba000-7fa2153be000 r--s 00032000 08:04 11803197                   /usr/share/java/ini4j-0.5.2-SNAPSHOT.jar
+7fa2153be000-7fa2153bf000 r--s 00000000 08:04 12980371                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-ini4j.jar
+7fa2153bf000-7fa2153c3000 r--s 00024000 08:04 11803303                   /usr/share/java/svnClientAdapter-1.8.16.jar
+7fa2153c3000-7fa2153c4000 r--s 00001000 08:04 12980335                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-svnClientAdapter.jar
+7fa2153c4000-7fa2153c8000 r--s 00020000 08:04 11803128                   /usr/share/java/bsaf-1.9.jar
+7fa2153c8000-7fa2153cc000 r--s 0008e000 08:04 14549702                   /usr/share/netbeans/java5/modules/org-netbeans-modules-swingapp.jar
+7fa2153d2000-7fa2153d3000 r--s 00000000 08:04 11803270                   /usr/share/java/AbsoluteLayout-7.0.jar
+7fa2153d3000-7fa2153fe000 r--s 00448000 08:04 14549738                   /usr/share/netbeans/java5/modules/org-netbeans-modules-form.jar
+7fa2153fe000-7fa215405000 r--s 00094000 08:04 11803123                   /usr/share/java/beansbinding-1.2.1.jar
+7fa215405000-7fa215406000 r--s 00000000 08:04 14549722                   /usr/share/netbeans/java5/modules/org-jdesktop-beansbinding.jar
+7fa215406000-7fa215407000 r--s 00005000 08:04 14549673                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-guards.jar
+7fa215407000-7fa21540f000 r--s 000cc000 08:04 14549711                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-j2seproject.jar
+7fa21540f000-7fa215411000 r--s 00000000 08:04 14549731                   /usr/share/netbeans/java5/modules/org-netbeans-modules-ant-browsetask.jar
+7fa215411000-7fa215412000 r--s 00001000 08:04 14549723                   /usr/share/netbeans/java5/modules/org-netbeans-modules-debugger-jpda-ant.jar
+7fa215412000-7fa215415000 r--s 00026000 08:04 14549688                   /usr/share/netbeans/java5/modules/org-netbeans-api-debugger-jpda.jar
+7fa215415000-7fa21541c000 r--s 0004c000 08:04 14549682                   /usr/share/netbeans/java5/modules/org-netbeans-modules-j2ee-persistenceapi.jar
+7fa21541c000-7fa21541f000 r--s 00017000 08:04 14549672                   /usr/share/netbeans/java5/modules/org-netbeans-modules-j2ee-metadata-model-support.jar
+7fa21541f000-7fa215420000 r--s 00002000 08:04 14549733                   /usr/share/netbeans/java5/modules/org-netbeans-modules-j2ee-metadata.jar
+7fa215420000-7fa215423000 r--s 00022000 08:04 11803042                   /usr/share/java/antlr3-runtime.jar
+7fa215423000-7fa215425000 r--s 00000000 08:04 12980355                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-antlr3-runtime.jar
+7fa215425000-7fa21542d000 r--s 0009f000 08:04 14549717                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-api-common.jar
+7fa21542d000-7fa215430000 r--s 00026000 08:04 14549691                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-sourceui.jar
+7fa215430000-7fa215431000 r--s 0000b000 08:04 12980283                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-target-iterator.jar
+7fa215431000-7fa215432000 r--s 00000000 08:04 12980249                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-tasklist-kit.jar
+7fa215432000-7fa215434000 r--s 00006000 08:04 12980311                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-tasklist-projectint.jar
+7fa215436000-7fa21543b000 r--s 00052000 08:04 12980350                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-tasklist-ui.jar
+7fa21543e000-7fa215444000 r--s 00050000 08:04 12980262                   /usr/share/netbeans/ide14/modules/org-netbeans-lib-terminalemulator.jar
+7fa215444000-7fa215445000 r--s 00000000 08:04 14550041                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-uihandler-exceptionreporter.jar
+7fa215445000-7fa215448000 r--s 00039000 08:04 14550024                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-uihandler.jar
+7fa215448000-7fa21544a000 r--s 0000e000 08:04 14550027                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-lib-uihandler.jar
+7fa21544a000-7fa21544b000 r--s 00004000 08:04 14550040                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-updatecenters.jar
+7fa215453000-7fa21545d000 r--s 00042000 08:04 13129766                   /usr/share/netbeans/ide14/modules/docs/org-netbeans-modules-usersguide.jar
+7fa21545d000-7fa21545e000 r--s 00003000 08:04 12980273                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-usersguide.jar
+7fa215465000-7fa215467000 r--s 0000d000 08:04 11407259                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-sendopts.jar
+7fa215467000-7fa215468000 r--s 00001000 08:04 12980267                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-versioning-indexingbridge.jar
+7fa215468000-7fa21546d000 r--s 00018000 08:04 13129767                   /usr/share/netbeans/ide14/modules/docs/org-netbeans-modules-versioning-system-cvss.jar
+7fa21546d000-7fa21547d000 r--s 00156000 08:04 12980308                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-versioning-system-cvss.jar
+7fa21547d000-7fa215480000 r--s 00034000 08:04 11802636                   /usr/share/java/jsch-0.1.48.jar
+7fa215480000-7fa215481000 r--s 00001000 08:04 12980276                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-jsch.jar
+7fa215481000-7fa215482000 r--s 0000f000 08:04 11803213                   /usr/share/java/jzlib-1.1.0.jar
+7fa215482000-7fa215483000 r--s 00000000 08:04 12980301                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-jzlib.jar
+7fa215483000-7fa21548b000 r--s 00083000 08:04 12980339                   /usr/share/netbeans/ide14/modules/org-netbeans-lib-cvsclient.jar
+7fa21548b000-7fa215495000 r--s 000bb000 08:04 12980284                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-versioning-util.jar
+7fa215495000-7fa215499000 r--s 00059000 08:04 12980243                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-versioning.jar
+7fa215499000-7fa21549b000 r--s 00003000 08:04 12980356                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-spellchecker-apimodule.jar
+7fa21549b000-7fa21549d000 r--s 0000e000 08:04 12980293                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-web-common.jar
+7fa21549d000-7fa2154a2000 r--s 0006d000 08:04 14550025                   /usr/share/netbeans/7.0.1/nb/modules/org-netbeans-modules-welcome.jar
+7fa2154a2000-7fa2154ad000 r--s 000d1000 08:04 12980248                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-projectui.jar
+7fa2154ad000-7fa2154b0000 r--s 00029000 08:04 11407269                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-favorites.jar
+7fa2154b0000-7fa2154b3000 r--s 00019000 08:04 11407268                   /usr/share/netbeans/platform13/modules/org-netbeans-core-execution.jar
+7fa2154b3000-7fa2154b8000 r--s 00044000 08:04 12980352                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-multiview.jar
+7fa2154b8000-7fa2154bb000 r--s 0001e000 08:04 11407260                   /usr/share/netbeans/platform13/modules/org-netbeans-core-multiview.jar
+7fa2154bb000-7fa2154bd000 r--s 00032000 08:04 12980300                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-schema-completion.jar
+7fa2154bd000-7fa2154c0000 r--s 00035000 08:04 14549690                   /usr/share/netbeans/java5/modules/org-netbeans-modules-xml-tools-java.jar
+7fa2154c0000-7fa2154d4000 r--s 00255000 08:04 14549700                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-source.jar
+7fa2154d4000-7fa2154d6000 r--s 0000e000 08:04 12980310                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-indent-project.jar
+7fa2154d6000-7fa2154d8000 r--s 0000a000 08:04 14549674                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-lexer.jar
+7fa2154d8000-7fa2154d9000 r--s 00004000 08:04 14549705                   /usr/share/netbeans/java5/modules/org-netbeans-modules-java-preprocessorbridge.jar
+7fa2154d9000-7fa2154ef000 r--s 00183000 08:04 11803318                   /usr/share/java/javac-impl-7.0.1.jar
+7fa2154ef000-7fa2154f0000 r--s 00001000 08:04 14549734                   /usr/share/netbeans/java5/modules/org-netbeans-libs-javacimpl.jar
+7fa2154f0000-7fa2154f6000 r--s 0001b000 08:04 11803317                   /usr/share/java/javac-api-7.0.1.jar
+7fa2154f6000-7fa2154f7000 r--s 00002000 08:04 14549718                   /usr/share/netbeans/java5/modules/org-netbeans-libs-javacapi.jar
+7fa2154f7000-7fa2154fd000 r--s 00066000 08:04 14549692                   /usr/share/netbeans/java5/modules/org-apache-tools-ant-module.jar
+7fa2154fd000-7fa2154ff000 r--s 0001c000 08:04 14549715                   /usr/share/netbeans/java5/modules/org-netbeans-modules-classfile.jar
+7fa2154ff000-7fa215501000 r--s 00007000 08:04 14549721                   /usr/share/netbeans/java5/modules/org-netbeans-api-java.jar
+7fa215503000-7fa21550a000 r--s 0005d000 08:04 13245408                   /usr/share/netbeans/ide14/modules/ext/org-netbeans-tax.jar
+7fa21550a000-7fa215510000 r--s 00058000 08:04 12980343                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-tax.jar
+7fa215510000-7fa215529000 r--s 00132000 08:04 11802582                   /usr/share/java/xercesImpl-2.11.0.jar
+7fa215529000-7fa215532000 r--s 00031000 08:04 11802576                   /usr/share/java/xml-apis-1.4.01.jar
+7fa215532000-7fa215533000 r--s 00000000 08:04 12980258                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-xerces.jar
+7fa215533000-7fa215537000 r--s 00046000 08:04 12980316                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-xdm.jar
+7fa21553a000-7fa21553c000 r--s 00014000 08:04 11802638                   /usr/share/java/servlet-api-2.5.jar
+7fa21553c000-7fa21553d000 r--s 00000000 08:04 12980239                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-servletapi.jar
+7fa21553d000-7fa215543000 r--s 00066000 08:04 12980341                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml.jar
+7fa215543000-7fa215546000 r--s 00031000 08:04 12980359                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-retriever.jar
+7fa215546000-7fa215548000 r--s 00015000 08:04 11802569                   /usr/share/java/xml-resolver-1.2.jar
+7fa215548000-7fa215549000 r--s 00000000 08:04 12980305                   /usr/share/netbeans/ide14/modules/org-apache-xml-resolver.jar
+7fa215549000-7fa21554e000 r--s 00061000 08:04 12980368                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-axi.jar
+7fa21554e000-7fa215556000 r--s 0007b000 08:04 12980358                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-schema-model.jar
+7fa215556000-7fa215559000 r--s 0002a000 08:04 12980366                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-xam.jar
+7fa215559000-7fa215561000 r--s 00097000 08:04 12980361                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-text.jar
+7fa215561000-7fa215563000 r--s 00011000 08:04 12980338                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-bracesmatching.jar
+7fa215563000-7fa215565000 r--s 0001c000 08:04 12980299                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-structure.jar
+7fa215565000-7fa215568000 r--s 00038000 08:04 12980245                   /usr/share/netbeans/ide14/modules/org-netbeans-api-debugger.jar
+7fa215568000-7fa215569000 r--s 00006000 08:04 12980237                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-lexer.jar
+7fa215569000-7fa215576000 r--s 000e8000 08:04 12980288                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-csl-api.jar
+7fa215576000-7fa21557d000 r--s 00063000 08:04 12980253                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-refactoring-api.jar
+7fa21557d000-7fa21557f000 r--s 0000f000 08:04 12980307                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-guards.jar
+7fa21557f000-7fa215584000 r--s 00045000 08:04 12980302                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-jumpto.jar
+7fa215584000-7fa21558d000 r--s 000b7000 08:04 12980274                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-parsing-api.jar
+7fa21558d000-7fa215590000 r--s 0001c000 08:04 12980314                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-parsing-lucene.jar
+7fa215590000-7fa2155a3000 r--s 000f8000 08:04 11803215                   /usr/share/java/lucene-core-2.9.4.jar
+7fa2155a3000-7fa2155a4000 r--s 00000000 08:04 12980287                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-lucene.jar
+7fa2155a4000-7fa2155a9000 r--s 00058000 08:04 11407444                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-masterfs.jar
+7fa2155a9000-7fa2155ac000 r--s 0001e000 08:04 11803201                   /usr/share/java/jna-3.2.7.jar
+7fa2155ac000-7fa2155ae000 r--s 00000000 08:04 11407261                   /usr/share/netbeans/platform13/modules/org-netbeans-libs-jna.jar
+7fa2155ae000-7fa2155b1000 r--s 00017000 08:04 12980336                   /usr/share/netbeans/ide14/modules/org-netbeans-api-java-classpath.jar
+7fa2155b1000-7fa2155b2000 r--s 00000000 08:04 14550035                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-core-ui_nb.jar
+7fa2155b2000-7fa2155b6000 r--s 00053000 08:04 11407281                   /usr/share/netbeans/platform13/modules/org-netbeans-core-ui.jar
+7fa2155b6000-7fa2155b9000 r--s 0003f000 08:04 12980349                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-codetemplates.jar
+7fa2155b9000-7fa2155bd000 r--s 00033000 08:04 12980328                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-completion.jar
+7fa2155bd000-7fa2155c6000 r--s 000db000 08:04 12980282                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-diff.jar
+7fa2155c6000-7fa2155ca000 r--s 0005a000 08:04 12980327                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-options-editor.jar
+7fa2155ca000-7fa2155cd000 r--s 0003c000 08:04 11407258                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-options-keymap.jar
+7fa2155cd000-7fa2155d6000 r--s 000a3000 08:04 12980281                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor.jar
+7fa2155d6000-7fa2155d7000 r--s 0001c000 08:04 11803272                   /usr/share/java/swing-layout-1.0.4.jar
+7fa2155d7000-7fa2155d9000 r--s 00000000 08:04 11407270                   /usr/share/netbeans/platform13/modules/org-jdesktop-layout.jar
+7fa2155d9000-7fa2155dd000 r--s 00041000 08:04 12980382                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-settings-storage.jar
+7fa2155dd000-7fa2155e6000 r--s 0008e000 08:04 11803070                   /usr/share/java/jhall-2.0.05.ds1.jar
+7fa2155e6000-7fa2155e9000 r--s 00025000 08:04 11407264                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-javahelp.jar
+7fa2155e9000-7fa2155ea000 r--s 00000000 08:04 14550031                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-modules-options-api_nb.jar
+7fa2155ea000-7fa2155ee000 r--s 0004f000 08:04 11407283                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-options-api.jar
+7fa2155ee000-7fa2155ef000 r--s 00000000 08:04 14550033                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-core_nb.jar
+7fa2155f0000-7fa2155f1000 r--s 00001000 08:04 12980297                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-svnClientAdapter-svnkit.jar
+7fa2155f1000-7fa2155f3000 r--s 00026000 08:04 14549781                   /usr/share/netbeans/apisupport3/modules/org-netbeans-modules-apisupport-crudsample.jar
+7fa2155f3000-7fa2155f5000 r--s 00000000 08:04 11670025                   /usr/share/netbeans/harness/modules/org-netbeans-modules-apisupport-harness.jar
+7fa2155f6000-7fa2155f8000 r--s 00011000 08:04 12980247                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-errorstripe.jar
+7fa2155f8000-7fa2155f9000 r--s 00002000 08:04 12980277                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-errorstripe-api.jar
+7fa2155f9000-7fa2155fc000 r--s 0001c000 08:04 12980285                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-xml-core.jar
+7fa2155fc000-7fa2155fe000 r--s 00011000 08:04 12980251                   /usr/share/netbeans/ide14/modules/org-netbeans-api-xml.jar
+7fa2155fe000-7fa21560c000 r--s 000b9000 08:04 12980250                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-debugger-ui.jar
+7fa21560d000-7fa215613000 r--s 00072000 08:04 11407297                   /usr/share/netbeans/platform13/modules/org-netbeans-core.jar
+7fa215613000-7fa215616000 r--s 00034000 08:04 12980378                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-editor-hints.jar
+7fa215616000-7fa215626000 r--s 00178000 08:04 12980298                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-lib.jar
+7fa215626000-7fa215628000 r--s 0000f000 08:04 12980373                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-indent.jar
+7fa215628000-7fa21562a000 r--s 0001b000 08:04 12980370                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-fold.jar
+7fa21562a000-7fa215632000 r--s 000a8000 08:04 12980303                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-lib2.jar
+7fa215632000-7fa215636000 r--s 00061000 08:04 12980238                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-lexer.jar
+7fa215636000-7fa215638000 r--s 00017000 08:04 12980291                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-util.jar
+7fa215638000-7fa21563a000 r--s 00010000 08:04 12980364                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-settings.jar
+7fa21563a000-7fa21563c000 r--s 00008000 08:04 14549680                   /usr/share/netbeans/java5/modules/org-netbeans-modules-ant-grammar.jar
+7fa21563c000-7fa215641000 r--s 00053000 08:04 12980346                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-palette.jar
+7fa215641000-7fa215642000 r--s 00000000 08:04 14550034                   /usr/share/netbeans/7.0.1/nb/modules/locale/org-netbeans-spi-quicksearch_nb.jar
+7fa215642000-7fa215644000 r--s 0001c000 08:04 11408443                   /usr/share/netbeans/platform13/modules/org-netbeans-spi-quicksearch.jar
+7fa215644000-7fa215645000 r--s 00002000 08:04 11408447                   /usr/share/netbeans/platform13/modules/org-netbeans-api-annotations-common.jar
+7fa215645000-7fa215646000 r--s 00008000 08:04 12980318                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-tasklist.jar
+7fa215646000-7fa21564a000 r--s 00042000 08:04 12980369                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-viewmodel.jar
+7fa21564a000-7fa21564c000 r--s 0000c000 08:04 12980257                   /usr/share/netbeans/ide14/modules/org-netbeans-spi-navigator.jar
+7fa21564c000-7fa215650000 r--s 00038000 08:04 12980292                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-projectuiapi.jar
+7fa215650000-7fa215651000 r--s 00000000 08:04 9568351                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7fa215651000-7fa21565a000 r--s 00000000 08:04 9568343                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7fa21565a000-7fa21565c000 r--s 00000000 08:04 9568345                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7fa21565c000-7fa215661000 r--s 00000000 08:04 9568326                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7fa215661000-7fa215662000 r--s 00000000 08:04 9568359                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7fa215662000-7fa215667000 r--s 00000000 08:04 9568338                    /var/cache/fontconfig/6eb3985aa4124903f6ff08ba781cd364-le64.cache-3
+7fa215667000-7fa215668000 r--s 00000000 08:04 9568323                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7fa215668000-7fa21566e000 r--s 00000000 08:04 9568347                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7fa21566e000-7fa215677000 r--s 00000000 08:04 9568337                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7fa215677000-7fa21567a000 r--s 00000000 08:04 9578322                    /var/cache/fontconfig/de156ccd2eddbdc19d37a45b8b2aac9c-le64.cache-3
+7fa21567a000-7fa21568a000 r--s 00000000 08:04 9568321                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7fa21568a000-7fa21568b000 r--s 00000000 08:04 9568325                    /var/cache/fontconfig/1ac9eb803944fde146138c791f5cc56a-le64.cache-3
+7fa21568b000-7fa21568e000 r--s 00000000 08:04 9568330                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7fa21568e000-7fa21568f000 r--s 00000000 08:04 9568357                    /var/cache/fontconfig/dc05db6664285cc2f12bf69c139ae4c3-le64.cache-3
+7fa21568f000-7fa215691000 r--s 00000000 08:04 9568340                    /var/cache/fontconfig/767a8244fc0220cfb567a839d0392e0b-le64.cache-3
+7fa215691000-7fa215692000 r--s 00000000 08:04 9568332                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7fa215692000-7fa215695000 r--s 00000000 08:04 9568342                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7fa215695000-7fa21569a000 r--s 00000000 08:04 9568327                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7fa21569a000-7fa21569b000 r--s 00000000 08:04 9568334                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7fa21569b000-7fa21569c000 r--s 00000000 08:04 9568350                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7fa21569c000-7fa2156a1000 r--s 00000000 08:04 9568349                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7fa2156a1000-7fa2156b2000 r--s 00000000 08:04 9568355                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7fa2156b2000-7fa2156b9000 r--s 00000000 08:04 9568331                    /var/cache/fontconfig/3f7329c5293ffd510edef78f73874cfd-le64.cache-3
+7fa2156b9000-7fa2156bc000 r--s 00000000 08:04 9568358                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7fa2156bc000-7fa2156c0000 r--s 00000000 08:04 9578321                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7fa2156c0000-7fa2156c3000 r--s 0001d000 08:04 12980376                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-editor-deprecated-pre65formatting.jar
+7fa2156c3000-7fa2156c9000 r--s 0007c000 08:04 12980294                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-utilities.jar
+7fa2156c9000-7fa2156cb000 r--s 0001d000 08:04 12980315                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-extbrowser.jar
+7fa2156cb000-7fa2156d5000 r--s 000f4000 08:04 11407291                   /usr/share/netbeans/platform13/modules/org-openide-loaders.jar
+7fa2156d5000-7fa2156df000 r-xp 00000000 08:04 14293049                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjpeg.so
+7fa2156df000-7fa2158de000 ---p 0000a000 08:04 14293049                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjpeg.so
+7fa2158de000-7fa2158df000 r--p 00009000 08:04 14293049                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjpeg.so
+7fa2158df000-7fa2158e0000 rw-p 0000a000 08:04 14293049                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjpeg.so
+7fa2158e0000-7fa215912000 r-xp 00000000 08:04 14293013                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/liblcms.so
+7fa215912000-7fa215b12000 ---p 00032000 08:04 14293013                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/liblcms.so
+7fa215b12000-7fa215b13000 r--p 00032000 08:04 14293013                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/liblcms.so
+7fa215b13000-7fa215b14000 rw-p 00033000 08:04 14293013                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/liblcms.so
+7fa215b14000-7fa215b16000 rw-p 00000000 00:00 0 
+7fa215b16000-7fa215b19000 ---p 00000000 00:00 0 
+7fa215b19000-7fa215d17000 rw-p 00000000 00:00 0                          [stack:26271]
+7fa215d17000-7fa215d1a000 ---p 00000000 00:00 0 
+7fa215d1a000-7fa215f18000 rw-p 00000000 00:00 0                          [stack:26253]
+7fa215f18000-7fa215f1b000 ---p 00000000 00:00 0 
+7fa215f1b000-7fa216119000 rw-p 00000000 00:00 0                          [stack:26252]
+7fa216119000-7fa21611a000 r--s 00000000 08:04 9568351                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7fa21611a000-7fa216123000 r--s 00000000 08:04 9568343                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7fa216123000-7fa216125000 r--s 00000000 08:04 9568345                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7fa216125000-7fa21612a000 r--s 00000000 08:04 9568326                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7fa21612a000-7fa21612f000 r--s 00000000 08:04 9568338                    /var/cache/fontconfig/6eb3985aa4124903f6ff08ba781cd364-le64.cache-3
+7fa21612f000-7fa216131000 r--s 00023000 08:04 12980280                   /usr/share/netbeans/ide14/modules/org-netbeans-swing-dirchooser.jar
+7fa216131000-7fa216135000 r--s 00032000 08:04 12980325                   /usr/share/netbeans/ide14/modules/org-netbeans-modules-projectapi.jar
+7fa216135000-7fa216138000 r--s 0002c000 08:04 11407288                   /usr/share/netbeans/platform13/modules/org-netbeans-swing-plaf.jar
+7fa216138000-7fa216139000 r--s 00006000 08:04 11407279                   /usr/share/netbeans/platform13/modules/org-openide-execution.jar
+7fa216139000-7fa21613a000 r--s 00008000 08:04 11408450                   /usr/share/netbeans/platform13/modules/org-openide-io.jar
+7fa21613a000-7fa21613c000 r--s 0000b000 08:04 12980312                   /usr/share/netbeans/ide14/modules/org-openidex-util.jar
+7fa21613c000-7fa21613d000 r--s 00000000 08:04 9568322                    /var/cache/fontconfig/0c9eb80ebd1c36541ebe2852d3bb0c49-le64.cache-3
+7fa21613d000-7fa21613e000 r--s 00007000 08:04 11407289                   /usr/share/netbeans/platform13/modules/org-netbeans-core-io-ui.jar
+7fa21613f000-7fa216141000 r--s 00007000 08:04 11408452                   /usr/share/netbeans/platform13/modules/org-netbeans-core-netigso.jar
+7fa216141000-7fa216142000 r--s 00002000 08:04 12980348                   /usr/share/netbeans/ide14/modules/org-netbeans-libs-svnClientAdapter-javahl.jar
+7fa216142000-7fa216146000 r--s 00034000 08:04 11803293                   /usr/share/java/trilead-ssh2-6401.jar
+7fa216146000-7fa21614a000 r--s 00027000 08:04 11408442                   /usr/share/netbeans/platform13/modules/org-openide-actions.jar
+7fa21614a000-7fa21614e000 r--s 0004a000 08:04 11407293                   /usr/share/netbeans/platform13/modules/org-openide-text.jar
+7fa21614e000-7fa216150000 r--s 00009000 08:04 11408449                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-editor-mimelookup.jar
+7fa216150000-7fa21615d000 r--s 00142000 08:04 11407266                   /usr/share/netbeans/platform13/modules/org-openide-explorer.jar
+7fa21615d000-7fa21616a000 r--s 000b0000 08:04 11408453                   /usr/share/netbeans/platform13/modules/org-netbeans-swing-tabcontrol.jar
+7fa21616a000-7fa21616f000 r-xp 00000000 08:04 11275657                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fa21616f000-7fa21636e000 ---p 00005000 08:04 11275657                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fa21636e000-7fa21636f000 r--p 00004000 08:04 11275657                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fa21636f000-7fa216370000 rw-p 00005000 08:04 11275657                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fa216370000-7fa216379000 r-xp 00000000 08:04 11277651                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fa216379000-7fa216579000 ---p 00009000 08:04 11277651                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fa216579000-7fa21657a000 r--p 00009000 08:04 11277651                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fa21657a000-7fa21657b000 rw-p 0000a000 08:04 11277651                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fa21657b000-7fa21657e000 r--s 0002b000 08:04 11407280                   /usr/share/netbeans/platform13/modules/org-netbeans-swing-outline.jar
+7fa21657e000-7fa216581000 r--s 0001d000 08:04 11407262                   /usr/share/netbeans/platform13/modules/org-openide-windows.jar
+7fa216581000-7fa216586000 r--s 00061000 08:04 11407285                   /usr/share/netbeans/platform13/modules/org-openide-nodes.jar
+7fa216586000-7fa216589000 r--s 00025000 08:04 11407284                   /usr/share/netbeans/platform13/modules/org-openide-dialogs.jar
+7fa216589000-7fa21658b000 r--s 0000c000 08:04 11407286                   /usr/share/netbeans/platform13/modules/org-netbeans-api-progress.jar
+7fa21658b000-7fa216590000 r--s 0006c000 08:04 11407292                   /usr/share/netbeans/platform13/modules/org-openide-awt.jar
+7fa216590000-7fa216592000 r--s 00008000 08:04 11407274                   /usr/share/netbeans/platform13/modules/org-netbeans-modules-queries.jar
+7fa216592000-7fa216595000 ---p 00000000 00:00 0 
+7fa216595000-7fa216793000 rw-p 00000000 00:00 0                          [stack:26251]
+7fa216793000-7fa21682a000 r-xp 00000000 08:04 11279392                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.10.0
+7fa21682a000-7fa216a29000 ---p 00097000 08:04 11279392                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.10.0
+7fa216a29000-7fa216a2f000 r--p 00096000 08:04 11279392                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.10.0
+7fa216a2f000-7fa216a30000 rw-p 0009c000 08:04 11279392                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.10.0
+7fa216a30000-7fa216a78000 r-xp 00000000 08:04 14293033                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fa216a78000-7fa216c78000 ---p 00048000 08:04 14293033                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fa216c78000-7fa216c7a000 r--p 00048000 08:04 14293033                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fa216c7a000-7fa216c7b000 rw-p 0004a000 08:04 14293033                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fa216c7b000-7fa216c7c000 rw-p 00000000 00:00 0 
+7fa216c7c000-7fa216c7f000 ---p 00000000 00:00 0 
+7fa216c7f000-7fa216e7d000 rw-p 00000000 00:00 0                          [stack:26250]
+7fa216e7d000-7fa216e80000 ---p 00000000 00:00 0 
+7fa216e80000-7fa21707e000 rw-p 00000000 00:00 0                          [stack:26249]
+7fa21707e000-7fa217083000 r-xp 00000000 08:04 11279056                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fa217083000-7fa217282000 ---p 00005000 08:04 11279056                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fa217282000-7fa217283000 r--p 00004000 08:04 11279056                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fa217283000-7fa217284000 rw-p 00005000 08:04 11279056                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fa217284000-7fa217286000 r-xp 00000000 08:04 11279045                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fa217286000-7fa217486000 ---p 00002000 08:04 11279045                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fa217486000-7fa217487000 r--p 00002000 08:04 11279045                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fa217487000-7fa217488000 rw-p 00003000 08:04 11279045                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fa217488000-7fa2174a5000 r-xp 00000000 08:04 11274839                   /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fa2174a5000-7fa2176a4000 ---p 0001d000 08:04 11274839                   /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fa2176a4000-7fa2176a5000 r--p 0001c000 08:04 11274839                   /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fa2176a5000-7fa2176a6000 rw-p 0001d000 08:04 11274839                   /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fa2176a6000-7fa2176b4000 r-xp 00000000 08:04 11272720                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fa2176b4000-7fa2178b4000 ---p 0000e000 08:04 11272720                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fa2178b4000-7fa2178b5000 r--p 0000e000 08:04 11272720                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fa2178b5000-7fa2178b6000 rw-p 0000f000 08:04 11272720                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fa2178b6000-7fa2178bb000 r-xp 00000000 08:04 11277659                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fa2178bb000-7fa217aba000 ---p 00005000 08:04 11277659                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fa217aba000-7fa217abb000 r--p 00004000 08:04 11277659                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fa217abb000-7fa217abc000 rw-p 00005000 08:04 11277659                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fa217abc000-7fa217ac5000 r-xp 00000000 08:04 11277613                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fa217ac5000-7fa217cc4000 ---p 00009000 08:04 11277613                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fa217cc4000-7fa217cc5000 r--p 00008000 08:04 11277613                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fa217cc5000-7fa217cc6000 rw-p 00009000 08:04 11277613                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fa217cc6000-7fa217dfa000 r-xp 00000000 08:04 11274841                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fa217dfa000-7fa217ffa000 ---p 00134000 08:04 11274841                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fa217ffa000-7fa217ffb000 r--p 00134000 08:04 11274841                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fa217ffb000-7fa218000000 rw-p 00135000 08:04 11274841                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fa218000000-7fa218021000 rw-p 00000000 00:00 0 
+7fa218021000-7fa21c000000 ---p 00000000 00:00 0 
+7fa21c000000-7fa21c001000 r--s 00000000 08:04 9568359                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7fa21c001000-7fa21c002000 r--s 00000000 08:04 9568323                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7fa21c002000-7fa21c008000 r--s 00000000 08:04 9568347                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7fa21c008000-7fa21c011000 r--s 00000000 08:04 9568337                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7fa21c011000-7fa21c014000 r--s 00000000 08:04 9578322                    /var/cache/fontconfig/de156ccd2eddbdc19d37a45b8b2aac9c-le64.cache-3
+7fa21c014000-7fa21c024000 r--s 00000000 08:04 9568321                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7fa21c024000-7fa21c025000 r--s 00000000 08:04 9568325                    /var/cache/fontconfig/1ac9eb803944fde146138c791f5cc56a-le64.cache-3
+7fa21c025000-7fa21c028000 r--s 00000000 08:04 9568330                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7fa21c028000-7fa21c029000 r--s 00000000 08:04 9568357                    /var/cache/fontconfig/dc05db6664285cc2f12bf69c139ae4c3-le64.cache-3
+7fa21c029000-7fa21c02b000 r--s 00000000 08:04 9568340                    /var/cache/fontconfig/767a8244fc0220cfb567a839d0392e0b-le64.cache-3
+7fa21c02b000-7fa21c02c000 r--s 00000000 08:04 9568332                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7fa21c02c000-7fa21c02f000 r--s 00000000 08:04 9568342                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7fa21c02f000-7fa21c034000 r--s 00000000 08:04 9568327                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7fa21c034000-7fa21c035000 r--s 00000000 08:04 9568334                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7fa21c035000-7fa21c036000 r--s 00000000 08:04 9568350                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7fa21c036000-7fa21c03b000 r--s 00000000 08:04 9568349                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7fa21c03b000-7fa21c04c000 r--s 00000000 08:04 9568355                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7fa21c04c000-7fa21c053000 r--s 00000000 08:04 9568331                    /var/cache/fontconfig/3f7329c5293ffd510edef78f73874cfd-le64.cache-3
+7fa21c053000-7fa21c054000 r--s 00000000 08:04 9568322                    /var/cache/fontconfig/0c9eb80ebd1c36541ebe2852d3bb0c49-le64.cache-3
+7fa21c054000-7fa21c057000 r--s 00000000 08:04 9568358                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7fa21c057000-7fa21c05b000 r--s 00000000 08:04 9578321                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7fa21c05b000-7fa21c05c000 r--s 00000000 08:04 9568351                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7fa21c05c000-7fa21c065000 r--s 00000000 08:04 9568343                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7fa21c065000-7fa21c067000 r--s 00000000 08:04 9568345                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7fa21c067000-7fa21c06c000 r--s 00000000 08:04 9568326                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7fa21c06c000-7fa21c06d000 r--s 00000000 08:04 9568359                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7fa21c06d000-7fa21c072000 r--s 00000000 08:04 9568338                    /var/cache/fontconfig/6eb3985aa4124903f6ff08ba781cd364-le64.cache-3
+7fa21c072000-7fa21c073000 r--s 00000000 08:04 9568323                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7fa21c073000-7fa21c079000 r--s 00000000 08:04 9568347                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7fa21c079000-7fa21c082000 r--s 00000000 08:04 9568337                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7fa21c082000-7fa21c085000 r--s 00000000 08:04 9578322                    /var/cache/fontconfig/de156ccd2eddbdc19d37a45b8b2aac9c-le64.cache-3
+7fa21c085000-7fa21c095000 r--s 00000000 08:04 9568321                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7fa21c095000-7fa21c096000 r--s 00000000 08:04 9568325                    /var/cache/fontconfig/1ac9eb803944fde146138c791f5cc56a-le64.cache-3
+7fa21c096000-7fa21c099000 r--s 00000000 08:04 9568330                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7fa21c099000-7fa21c09a000 r--s 00000000 08:04 9568357                    /var/cache/fontconfig/dc05db6664285cc2f12bf69c139ae4c3-le64.cache-3
+7fa21c09a000-7fa21c09c000 r--s 00000000 08:04 9568340                    /var/cache/fontconfig/767a8244fc0220cfb567a839d0392e0b-le64.cache-3
+7fa21c09c000-7fa21c09f000 r--s 00000000 08:04 9568342                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7fa21c09f000-7fa21c0b0000 r-xp 00000000 08:04 11274843                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fa21c0b0000-7fa21c2af000 ---p 00011000 08:04 11274843                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fa21c2af000-7fa21c2b0000 r--p 00010000 08:04 11274843                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fa21c2b0000-7fa21c2b1000 rw-p 00011000 08:04 11274843                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fa21c2b1000-7fa21c2fd000 r-xp 00000000 08:04 14293771                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fa21c2fd000-7fa21c4fc000 ---p 0004c000 08:04 14293771                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fa21c4fc000-7fa21c4fd000 r--p 0004b000 08:04 14293771                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fa21c4fd000-7fa21c500000 rw-p 0004c000 08:04 14293771                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fa21c500000-7fa21c501000 rw-p 00000000 00:00 0 
+7fa21c501000-7fa21c5af000 r-xp 00000000 08:04 14293036                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libawt.so
+7fa21c5af000-7fa21c7ae000 ---p 000ae000 08:04 14293036                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libawt.so
+7fa21c7ae000-7fa21c7af000 r--p 000ad000 08:04 14293036                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libawt.so
+7fa21c7af000-7fa21c7ba000 rw-p 000ae000 08:04 14293036                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libawt.so
+7fa21c7ba000-7fa21c7df000 rw-p 00000000 00:00 0 
+7fa21c7df000-7fa21c7e2000 ---p 00000000 00:00 0 
+7fa21c7e2000-7fa21c9e0000 rw-p 00000000 00:00 0                          [stack:26248]
+7fa21c9e0000-7fa21c9e8000 r-xp 00000000 08:04 14293022                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnio.so
+7fa21c9e8000-7fa21cbe7000 ---p 00008000 08:04 14293022                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnio.so
+7fa21cbe7000-7fa21cbe8000 r--p 00007000 08:04 14293022                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnio.so
+7fa21cbe8000-7fa21cbe9000 rw-p 00008000 08:04 14293022                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnio.so
+7fa21cbe9000-7fa21cbfe000 r-xp 00000000 08:04 14293026                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnet.so
+7fa21cbfe000-7fa21cdfd000 ---p 00015000 08:04 14293026                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnet.so
+7fa21cdfd000-7fa21cdfe000 r--p 00014000 08:04 14293026                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnet.so
+7fa21cdfe000-7fa21cdff000 rw-p 00015000 08:04 14293026                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libnet.so
+7fa21cdff000-7fa21ce02000 ---p 00000000 00:00 0 
+7fa21ce02000-7fa21d000000 rw-p 00000000 00:00 0                          [stack:26247]
+7fa21d000000-7fa21d270000 rwxp 00000000 00:00 0 
+7fa21d270000-7fa220199000 rw-p 00000000 00:00 0 
+7fa220199000-7fa224000000 ---p 00000000 00:00 0 
+7fa224000000-7fa224001000 r--s 00000000 08:04 9568332                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7fa224001000-7fa224006000 r--s 00000000 08:04 9568327                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7fa224006000-7fa224007000 r--s 00000000 08:04 9568334                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7fa224007000-7fa224008000 r--s 00000000 08:04 9568350                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7fa224008000-7fa22400d000 r--s 00000000 08:04 9568349                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7fa22400d000-7fa22401e000 r--s 00000000 08:04 9568355                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7fa22401e000-7fa224025000 r--s 00000000 08:04 9568331                    /var/cache/fontconfig/3f7329c5293ffd510edef78f73874cfd-le64.cache-3
+7fa224025000-7fa224026000 r--s 00000000 08:04 9568322                    /var/cache/fontconfig/0c9eb80ebd1c36541ebe2852d3bb0c49-le64.cache-3
+7fa224026000-7fa224029000 r--s 00000000 08:04 9568358                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7fa224029000-7fa22402d000 r--s 00000000 08:04 9578321                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7fa22402d000-7fa22405e000 rw-p 00000000 00:00 0 
+7fa22405e000-7fa2240be000 r--s 00dc1000 08:04 11408510                   /usr/lib/jvm/java-6-openjdk-amd64/lib/tools.jar
+7fa2240be000-7fa2240c4000 r--s 0001f000 08:04 11408507                   /usr/lib/jvm/java-6-openjdk-amd64/lib/dt.jar
+7fa2240c4000-7fa2240c7000 ---p 00000000 00:00 0 
+7fa2240c7000-7fa2242c5000 rw-p 00000000 00:00 0                          [stack:26246]
+7fa2242c5000-7fa2242c8000 r--s 00046000 08:04 14549990                   /usr/share/netbeans/7.0.1/nb/core/org-netbeans-upgrader.jar
+7fa2242c8000-7fa2242cf000 r--s 000a0000 08:04 11407193                   /usr/share/netbeans/platform13/core/org-openide-filesystems.jar
+7fa2242cf000-7fa2242d0000 ---p 00000000 00:00 0 
+7fa2242d0000-7fa2243d0000 rw-p 00000000 00:00 0                          [stack:26232]
+7fa2243d0000-7fa2243d3000 ---p 00000000 00:00 0 
+7fa2243d3000-7fa2245d1000 rw-p 00000000 00:00 0                          [stack:26231]
+7fa2245d1000-7fa2245d4000 ---p 00000000 00:00 0 
+7fa2245d4000-7fa2246d2000 rw-p 00000000 00:00 0                          [stack:26230]
+7fa2246d2000-7fa2246d5000 ---p 00000000 00:00 0 
+7fa2246d5000-7fa2247d3000 rw-p 00000000 00:00 0                          [stack:26229]
+7fa2247d3000-7fa2247d6000 ---p 00000000 00:00 0 
+7fa2247d6000-7fa2249d4000 rw-p 00000000 00:00 0                          [stack:26228]
+7fa2249d4000-7fa2250b7000 r--p 00000000 08:04 11278033                   /usr/lib/locale/locale-archive
+7fa2250b7000-7fa2250ba000 ---p 00000000 00:00 0 
+7fa2250ba000-7fa2252b8000 rw-p 00000000 00:00 0                          [stack:26227]
+7fa2252b8000-7fa2252bb000 ---p 00000000 00:00 0 
+7fa2252bb000-7fa2254b9000 rw-p 00000000 00:00 0                          [stack:26226]
+7fa2254b9000-7fa2254ba000 ---p 00000000 00:00 0 
+7fa2254ba000-7fa225af2000 rw-p 00000000 00:00 0                          [stack:26225]
+7fa225af2000-7fa225c86000 r--s 03822000 08:04 14293005                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar
+7fa225c86000-7fa225cae000 rw-p 00000000 00:00 0 
+7fa225cae000-7fa225caf000 ---p 00000000 00:00 0 
+7fa225caf000-7fa225daf000 rw-p 00000000 00:00 0                          [stack:26224]
+7fa225daf000-7fa225db0000 ---p 00000000 00:00 0 
+7fa225db0000-7fa225eb0000 rw-p 00000000 00:00 0                          [stack:26223]
+7fa225eb0000-7fa225eb1000 ---p 00000000 00:00 0 
+7fa225eb1000-7fa225fb1000 rw-p 00000000 00:00 0                          [stack:26222]
+7fa225fb1000-7fa225fb2000 ---p 00000000 00:00 0 
+7fa225fb2000-7fa2260c4000 rw-p 00000000 00:00 0                          [stack:26221]
+7fa2260c4000-7fa226172000 rw-p 00000000 00:00 0 
+7fa226172000-7fa226184000 rw-p 00000000 00:00 0 
+7fa226184000-7fa226232000 rw-p 00000000 00:00 0 
+7fa226232000-7fa22623d000 rw-p 00000000 00:00 0 
+7fa22623d000-7fa226332000 rw-p 00000000 00:00 0 
+7fa226332000-7fa226345000 rw-p 00000000 00:00 0 
+7fa226345000-7fa226346000 ---p 00000000 00:00 0 
+7fa226346000-7fa2263b2000 rw-p 00000000 00:00 0 
+7fa2263b2000-7fa2263b3000 rw-p 00000000 00:00 0 
+7fa2263b3000-7fa2263ba000 r-xp 00000000 08:04 14293050                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libzip.so
+7fa2263ba000-7fa2265b9000 ---p 00007000 08:04 14293050                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libzip.so
+7fa2265b9000-7fa2265ba000 r--p 00006000 08:04 14293050                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libzip.so
+7fa2265ba000-7fa2265bb000 rw-p 00007000 08:04 14293050                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libzip.so
+7fa2265bb000-7fa2265c7000 r-xp 00000000 08:04 2756477                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7fa2265c7000-7fa2267c6000 ---p 0000c000 08:04 2756477                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7fa2267c6000-7fa2267c7000 r--p 0000b000 08:04 2756477                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7fa2267c7000-7fa2267c8000 rw-p 0000c000 08:04 2756477                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7fa2267c8000-7fa2267d3000 r-xp 00000000 08:04 2756484                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7fa2267d3000-7fa2269d2000 ---p 0000b000 08:04 2756484                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7fa2269d2000-7fa2269d3000 r--p 0000a000 08:04 2756484                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7fa2269d3000-7fa2269d4000 rw-p 0000b000 08:04 2756484                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7fa2269d4000-7fa2269eb000 r-xp 00000000 08:04 2756473                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7fa2269eb000-7fa226bea000 ---p 00017000 08:04 2756473                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7fa226bea000-7fa226beb000 r--p 00016000 08:04 2756473                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7fa226beb000-7fa226bec000 rw-p 00017000 08:04 2756473                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7fa226bec000-7fa226bee000 rw-p 00000000 00:00 0 
+7fa226bee000-7fa226bf6000 r-xp 00000000 08:04 2756486                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7fa226bf6000-7fa226df5000 ---p 00008000 08:04 2756486                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7fa226df5000-7fa226df6000 r--p 00007000 08:04 2756486                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7fa226df6000-7fa226df7000 rw-p 00008000 08:04 2756486                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7fa226df7000-7fa226e24000 r-xp 00000000 08:04 14293035                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjava.so
+7fa226e24000-7fa227024000 ---p 0002d000 08:04 14293035                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjava.so
+7fa227024000-7fa227025000 r--p 0002d000 08:04 14293035                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjava.so
+7fa227025000-7fa227028000 rw-p 0002e000 08:04 14293035                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libjava.so
+7fa227028000-7fa227037000 r-xp 00000000 08:04 14293034                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libverify.so
+7fa227037000-7fa227236000 ---p 0000f000 08:04 14293034                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libverify.so
+7fa227236000-7fa227238000 r--p 0000e000 08:04 14293034                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libverify.so
+7fa227238000-7fa227239000 rw-p 00010000 08:04 14293034                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/libverify.so
+7fa227239000-7fa227240000 r-xp 00000000 08:04 2756480                    /lib/x86_64-linux-gnu/librt-2.17.so
+7fa227240000-7fa22743f000 ---p 00007000 08:04 2756480                    /lib/x86_64-linux-gnu/librt-2.17.so
+7fa22743f000-7fa227440000 r--p 00006000 08:04 2756480                    /lib/x86_64-linux-gnu/librt-2.17.so
+7fa227440000-7fa227441000 rw-p 00007000 08:04 2756480                    /lib/x86_64-linux-gnu/librt-2.17.so
+7fa227441000-7fa227444000 ---p 00000000 00:00 0 
+7fa227444000-7fa227642000 rw-p 00000000 00:00 0                          [stack:26220]
+7fa227642000-7fa227656000 r-xp 00000000 08:04 2756243                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa227656000-7fa227856000 ---p 00014000 08:04 2756243                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa227856000-7fa227857000 r--p 00014000 08:04 2756243                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa227857000-7fa227858000 rw-p 00015000 08:04 2756243                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa227858000-7fa22795b000 r-xp 00000000 08:04 2756485                    /lib/x86_64-linux-gnu/libm-2.17.so
+7fa22795b000-7fa227b5b000 ---p 00103000 08:04 2756485                    /lib/x86_64-linux-gnu/libm-2.17.so
+7fa227b5b000-7fa227b5c000 r--p 00103000 08:04 2756485                    /lib/x86_64-linux-gnu/libm-2.17.so
+7fa227b5c000-7fa227b5d000 rw-p 00104000 08:04 2756485                    /lib/x86_64-linux-gnu/libm-2.17.so
+7fa227b5d000-7fa227c42000 r-xp 00000000 08:04 11279951                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7fa227c42000-7fa227e41000 ---p 000e5000 08:04 11279951                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7fa227e41000-7fa227e49000 r--p 000e4000 08:04 11279951                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7fa227e49000-7fa227e4b000 rw-p 000ec000 08:04 11279951                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7fa227e4b000-7fa227e60000 rw-p 00000000 00:00 0 
+7fa227e60000-7fa228775000 r-xp 00000000 08:04 14293040                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fa228775000-7fa228974000 ---p 00915000 08:04 14293040                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fa228974000-7fa2289f5000 r--p 00914000 08:04 14293040                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fa2289f5000-7fa228a10000 rw-p 00995000 08:04 14293040                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fa228a10000-7fa228a39000 rw-p 00000000 00:00 0 
+7fa228a39000-7fa228a4f000 r-xp 00000000 08:04 2756371                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fa228a4f000-7fa228c4e000 ---p 00016000 08:04 2756371                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fa228c4e000-7fa228c4f000 r--p 00015000 08:04 2756371                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fa228c4f000-7fa228c50000 rw-p 00016000 08:04 2756371                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7fa228c50000-7fa228e0f000 r-xp 00000000 08:04 2756488                    /lib/x86_64-linux-gnu/libc-2.17.so
+7fa228e0f000-7fa22900e000 ---p 001bf000 08:04 2756488                    /lib/x86_64-linux-gnu/libc-2.17.so
+7fa22900e000-7fa229012000 r--p 001be000 08:04 2756488                    /lib/x86_64-linux-gnu/libc-2.17.so
+7fa229012000-7fa229014000 rw-p 001c2000 08:04 2756488                    /lib/x86_64-linux-gnu/libc-2.17.so
+7fa229014000-7fa229019000 rw-p 00000000 00:00 0 
+7fa229019000-7fa22901c000 r-xp 00000000 08:04 2756476                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7fa22901c000-7fa22921b000 ---p 00003000 08:04 2756476                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7fa22921b000-7fa22921c000 r--p 00002000 08:04 2756476                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7fa22921c000-7fa22921d000 rw-p 00003000 08:04 2756476                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7fa22921d000-7fa229221000 r-xp 00000000 08:04 14293017                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fa229221000-7fa229420000 ---p 00004000 08:04 14293017                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fa229420000-7fa229421000 r--p 00003000 08:04 14293017                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fa229421000-7fa229422000 rw-p 00004000 08:04 14293017                   /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fa229422000-7fa22943a000 r-xp 00000000 08:04 2756474                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7fa22943a000-7fa229639000 ---p 00018000 08:04 2756474                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7fa229639000-7fa22963a000 r--p 00017000 08:04 2756474                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7fa22963a000-7fa22963b000 rw-p 00018000 08:04 2756474                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7fa22963b000-7fa22963f000 rw-p 00000000 00:00 0 
+7fa22963f000-7fa229662000 r-xp 00000000 08:04 2752535                    /lib/x86_64-linux-gnu/ld-2.17.so
+7fa229662000-7fa229663000 r--s 00047000 08:04 14549992                   /usr/share/netbeans/7.0.1/nb/core/locale/core_nb.jar
+7fa229663000-7fa229668000 r--s 00099000 08:04 11407192                   /usr/share/netbeans/platform13/core/core.jar
+7fa229668000-7fa22966b000 r--s 00034000 08:04 11803274                   /usr/share/java/org-openide-util-lookup-7.0.jar
+7fa22966b000-7fa229672000 r--s 0007d000 08:04 11803276                   /usr/share/java/org-openide-util-7.0.jar
+7fa229672000-7fa229679000 r--s 000fc000 08:04 13245374                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/resources.jar
+7fa229679000-7fa22967c000 r--s 0007f000 08:04 13245367                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/jsse.jar
+7fa22967c000-7fa22967f000 r--s 00045000 08:04 11408459                   /usr/share/netbeans/platform13/lib/boot.jar
+7fa22967f000-7fa229681000 r--s 00001000 08:04 13505388                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/dnsns.jar
+7fa229681000-7fa229683000 r--s 0000f000 08:04 13505389                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/pulse-java.jar
+7fa229683000-7fa22968e000 rw-p 00000000 00:00 0 
+7fa22968e000-7fa229783000 rw-p 00000000 00:00 0 
+7fa229783000-7fa22978d000 rw-p 00000000 00:00 0 
+7fa22978d000-7fa229843000 rw-p 00000000 00:00 0 
+7fa229843000-7fa229848000 rw-p 00000000 00:00 0 
+7fa229848000-7fa229849000 r--s 00007000 08:04 11803278                   /usr/share/java/org-openide-modules-7.0.jar
+7fa229849000-7fa22984c000 r--s 00077000 08:04 13505390                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/localedata.jar
+7fa22984c000-7fa22984f000 r--s 00031000 08:04 13505391                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunjce_provider.jar
+7fa22984f000-7fa229853000 r--s 00039000 08:04 13505392                   /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunpkcs11.jar
+7fa229853000-7fa229855000 r--s 00006000 08:04 11801296                   /usr/share/java/java-atk-wrapper.jar
+7fa229855000-7fa22985d000 rw-s 00000000 08:04 4456506                    /tmp/hsperfdata_lazher/26219
+7fa22985d000-7fa22985e000 rw-p 00000000 00:00 0 
+7fa22985e000-7fa22985f000 r--p 00000000 00:00 0 
+7fa22985f000-7fa229861000 rw-p 00000000 00:00 0 
+7fa229861000-7fa229862000 r--p 00022000 08:04 2752535                    /lib/x86_64-linux-gnu/ld-2.17.so
+7fa229862000-7fa229864000 rw-p 00023000 08:04 2752535                    /lib/x86_64-linux-gnu/ld-2.17.so
+7fffe54d7000-7fffe54f9000 rw-p 00000000 00:00 0                          [stack]
+7fffe555c000-7fffe555e000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Djdk.home=/usr/lib/jvm/java-6-openjdk-amd64 -Djava.library.path=/usr/lib/jni -Dnetbeans.system_http_proxy=DIRECT -Dnetbeans.system_http_non_proxy_hosts= -Dnetbeans.dirs=/usr/share/netbeans/7.0.1/nb:/usr/share/netbeans/7.0.1/bin/../ergonomics:/usr/share/netbeans/7.0.1/ide:/usr/share/netbeans/7.0.1/java:/usr/share/netbeans/7.0.1/bin/../xml:/usr/share/netbeans/7.0.1/apisupport:/usr/share/netbeans/7.0.1/bin/../webcommon:/usr/share/netbeans/7.0.1/bin/../websvccommon:/usr/share/netbeans/7.0.1/bin/../enterprise:/usr/share/netbeans/7.0.1/bin/../mobility:/usr/share/netbeans/7.0.1/bin/../profiler:/usr/share/netbeans/7.0.1/bin/../ruby:/usr/share/netbeans/7.0.1/bin/../python:/usr/share/netbeans/7.0.1/bin/../php:/usr/share/netbeans/7.0.1/bin/../visualweb:/usr/share/netbeans/7.0.1/bin/../soa:/usr/share/netbeans/7.0.1/bin/../identity:/usr/share/netbeans/7.0.1/bin/../uml:/usr/share/netbeans/7.0.1/harness:/usr/share/netbeans/7.0.1/bin/../cnd:/usr/share/netbeans/7.0.1/bin/../dlight:/usr/share/netbeans/7.0.1/bin/../groovy:/usr/share/netbeans/7.0.1/bin/../extra:/usr/share/netbeans/7.0.1/bin/../javafx:/usr/share/netbeans/7.0.1/bin/../javacard: -Dnetbeans.home=/usr/share/netbeans/7.0.1/platform -Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade -Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense -XX:MaxPermSize=384m -Xmx768m -Xss2m -Xms32m -XX:PermSize=32m -Dapple.laf.useScreenMenuBar=true -Dapple.awt.graphics.UseQuartz=true -Dsun.java2d.noddraw=true -Dsun.java2d.pmoffscreen=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/lazher/.netbeans/7.0/var/log/heapdump.hprof 
+java_command: org.netbeans.Main --userdir /home/lazher/.netbeans/7.0 --branding nb
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/jdk1.7.0_51
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/jdk1.7.0_51/bin:/home/lazher/Tools/spring-roo-1.2.5.RELEASE/bin:/home/lazher/Tools/apache-maven-3.1.1/bin
+USERNAME=lazher
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x792b60], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x792b60], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x65b240], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00001000, sa_flags=0x10000000
+SIGXFSZ: [libjvm.so+0x65b240], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x65b240], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x65b440], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x65dc40], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: [libjvm.so+0x65dc40], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x65dc40], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:LinuxMint 15 (olivia)
+uname:Linux 3.8.0-19-generic #29-Ubuntu SMP Wed Apr 17 18:16:28 UTC 2013 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 44996, NOFILE 4096, AS infinity
+load average:1,50 0,68 0,51
+
+/proc/meminfo:
+MemTotal:        5998672 kB
+MemFree:          346764 kB
+Buffers:          217736 kB
+Cached:          1851100 kB
+SwapCached:            0 kB
+Active:          3235624 kB
+Inactive:        1818004 kB
+Active(anon):    2372816 kB
+Inactive(anon):  1044240 kB
+Active(file):     862808 kB
+Inactive(file):   773764 kB
+Unevictable:          32 kB
+Mlocked:              32 kB
+SwapTotal:       7811068 kB
+SwapFree:        7810876 kB
+Dirty:             38892 kB
+Writeback:           220 kB
+AnonPages:       2985180 kB
+Mapped:           349644 kB
+Shmem:            432116 kB
+Slab:             484552 kB
+SReclaimable:     450248 kB
+SUnreclaim:        34304 kB
+KernelStack:        5176 kB
+PageTables:        41120 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    10810404 kB
+Committed_AS:    6832656 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      438888 kB
+VmallocChunk:   34359294976 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       65536 kB
+DirectMap2M:     6125568 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 5998672k(346764k free), swap 7811068k(7810876k free)
+
+vm_info: OpenJDK 64-Bit Server VM (20.0-b12) for linux-amd64 JRE (1.6.0_27-b27), built on Nov 16 2013 17:00:56 by "buildd" with gcc 4.7.3
+
+time: Mon Mar 17 10:40:29 2014
+elapsed time: 16 seconds
+
