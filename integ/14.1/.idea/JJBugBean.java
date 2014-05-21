@@ -12,14 +12,14 @@ true
 @RooJsfManagedBean(entity = JJBug.class, beanName = "jJBugBean")
 public class JJBugBean {
 
-	private JJBug bug;
-	private JJProject project;
+private JJBug bug;
+private JJProject project;
 
-	public JJBug getBug() {
+public JJBug getBug() {
 		return bug;
-	}
+}
 
-	public void setBug(JJBug bug) {
+public void setBug(JJBug bug) {
 		this.bug = bug;
 	}
 
